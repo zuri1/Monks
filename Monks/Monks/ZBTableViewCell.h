@@ -14,5 +14,6 @@
 @property (nonatomic) ZBTalk *talk;
 
 @property (nonatomic) IBOutlet UILabel *title;
+@property (nonatomic) IBOutlet UIImageView *imageView;
 
 @end
