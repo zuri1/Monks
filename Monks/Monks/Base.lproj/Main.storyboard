@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3VM-Ek-9Op">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PNz-uf-MyW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="keS-Fu-CLZ">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="PNz-uf-MyW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vB2-FG-hWL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3VM-Ek-9Op" kind="relationship" relationship="rootViewController" id="vTg-Kv-RKF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IhZ-1b-7gw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-329" y="197"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="Tfx-ba-cfF">
             <objects>
@@ -13,11 +28,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="94" id="VJq-8k-R0c" customClass="ZBTableViewCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="94"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="94" id="VJq-8k-R0c" customClass="ZBTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VJq-8k-R0c" id="1qw-PB-deZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="93"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joe-oI-B4z">
@@ -36,6 +51,7 @@
                                 <connections>
                                     <outlet property="imageView" destination="Kzm-Vl-h5Z" id="pSH-XX-kHl"/>
                                     <outlet property="title" destination="joe-oI-B4z" id="ElY-mm-0yv"/>
+                                    <segue destination="T3b-CS-FnO" kind="push" id="hUi-On-5ZY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -44,10 +60,40 @@
                             <outlet property="delegate" destination="3VM-Ek-9Op" id="MVp-3X-Mvy"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="xBO-Xv-a3K"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cmy-di-vEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="250" y="207"/>
+            <point key="canvasLocation" x="153" y="197"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="hzt-qL-IcN">
+            <objects>
+                <tableViewController id="T3b-CS-FnO" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zEC-HL-1at">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="CBY-OZ-zIF">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CBY-OZ-zIF" id="tJB-qr-kNF">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="T3b-CS-FnO" id="EuB-ob-5lR"/>
+                            <outlet property="delegate" destination="T3b-CS-FnO" id="YQr-9G-flU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="cgJ-Du-aRh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLi-gX-Zhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="197"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
