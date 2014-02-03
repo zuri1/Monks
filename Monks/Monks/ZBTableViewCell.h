@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZBTalk.h"
+#import "ZBMonk.h"
 
 @interface ZBTableViewCell : UITableViewCell
 
-@property (nonatomic) ZBTalk *talk;
+@property (nonatomic) ZBMonk *monk;
 
-@property (nonatomic) IBOutlet UILabel *title;
+@property (nonatomic) IBOutlet UILabel *name;
 @property (nonatomic) IBOutlet UIImageView *imageView;
 
 @end

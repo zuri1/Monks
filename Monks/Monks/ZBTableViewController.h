@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZBTalk.h"
+#import "ZBMonk.h"
 #import "ZBTableViewCell.h"
 
 @interface ZBTableViewController : UITableViewController
 
-@property (nonatomic) NSMutableArray *talks;
+@property (nonatomic, strong) NSMutableArray *monks;
 
 @end

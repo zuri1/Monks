@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Monks</key>
+	<array>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Amaro1</string>
+				<string>Amaro2</string>
+				<string>Amaro3</string>
+				<string>Amaro4</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Amaro</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array/>
+			<key>name</key>
+			<string>Ajahn Chah</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array/>
+			<key>name</key>
+			<string>Ajahn Jayasaro</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array/>
+			<key>name</key>
+			<string>Ajahn Munindo</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array/>
+			<key>name</key>
+			<string>Ajahn Pasanno</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array/>
+			<key>name</key>
+			<string>Ajahn Sona</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array/>
+			<key>name</key>
+			<string>Ajahn Sumedho</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array/>
+			<key>name</key>
+			<string>Ajahn Viradhammo</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array/>
+			<key>name</key>
+			<string>Ayya Khema</string>
+		</dict>
+	</array>
+</dict>
+</plist>
