@@ -7,10 +7,11 @@
 //
 
 #import "ZBTalkTableViewController.h"
+#import "ZBViewController.h"
 
 @interface ZBTalkTableViewController ()
 
-@property (nonatomic) NSMutableArray *talks;
+@property (nonatomic) NSMutableArray *talkURLs;
 
 @end
 
@@ -29,6 +30,15 @@
 {
     [super viewDidLoad];
 
+    self.talkURLs = [[NSMutableArray alloc] init];
+    
+    for (NSString *string in self.monk.talks) {
+        NSString *mp3Path = [[NSBundle mainBundle] pathForResource:string ofType:@"mp3"];
+        NSURL *mp3URL = [NSURL fileURLWithPath:mp3Path];
+        
+        [self.talkURLs addObject:mp3URL];
+        
+    }
     
 }
 
@@ -47,16 +57,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return self.talkURLs.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    ZBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Customize cells
-    
+    cell.textLabel.text = self.monk.talks[indexPath.row];
     
     return cell;
 }
@@ -69,8 +79,12 @@
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"audioPlayer"]) {
+        ZBViewController *audioVC = (ZBViewController *)segue.destinationViewController;
+        
+        audioVC.talkURL = self.talkURLs[[self.tableView indexPathForSelectedRow].row];
+    }
+
 }
 
 

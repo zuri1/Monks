@@ -10,4 +10,6 @@
 
 @interface ZBViewController : UIViewController
 
+@property (nonatomic, weak) NSURL *talkURL;
+
 @end

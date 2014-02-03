@@ -31,7 +31,7 @@
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ZBMonks" ofType:@"plist"];
     NSDictionary *plistDict = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     NSArray *plistArray = [plistDict objectForKey:@"Monks"];
-    NSLog(@"%@", plistArray);
+    
     
     self.monks = [[NSMutableArray alloc] init];
     
@@ -41,7 +41,6 @@
         newMonk.talks = [dict objectForKey:@"talks"];
         NSString *imageName = [NSString stringWithFormat:@"%@.jpg", newMonk.name];
         newMonk.image = [UIImage imageNamed:imageName];
-        NSLog(@"%@", newMonk.name);
         
         [self.monks addObject:newMonk];
     }
@@ -85,6 +84,8 @@
 {
     if ([segue.identifier isEqualToString:@"talksView"]) {
         ZBTalkTableViewController *talksVC = (ZBTalkTableViewController *)segue.destinationViewController;
+        
+        talksVC.monk = self.monks[[self.tableView indexPathForSelectedRow].row];
     }
     
     // Get the new view controller using [segue destinationViewController].
