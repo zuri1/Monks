@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSMutableArray *talks;
+@property (nonatomic, strong) NSString *currentTalk;
 
 - (id)initWithImage:(UIImage *)aImage
               name:(NSString *)aName

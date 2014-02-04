@@ -33,12 +33,16 @@
 {
     [super viewDidLoad];
     
-    
+    self.audioPlayerView.artistNameLabel.text = self.monk.name;
+    self.audioPlayerView.albumArtwork.image = self.monk.image;
+    self.audioPlayerView.trackNameLabel.text = self.monk.currentTalk;
     
     NSError *error;
     _backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
     [_backgroundMusicPlayer prepareToPlay];
     [_backgroundMusicPlayer play];
+    
+    
 }
 
 - (void)playOrPauseCurrentTrack
@@ -48,6 +52,7 @@
     } else {
         [self.backgroundMusicPlayer play];
     }
+    // title may become unsynced with playing state...
 }
 
 - (void)didReceiveMemoryWarning

@@ -21,6 +21,7 @@
 @interface ZBAudioPlayerView : UIView
 
 @property (nonatomic, unsafe_unretained) IBOutlet id<ZBAudioPlayerViewDelegate> delegate;
+//^why isn't this hooked up?
 
 @property (nonatomic, weak) IBOutlet UILabel *artistNameLabel, *trackNameLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *albumArtwork;

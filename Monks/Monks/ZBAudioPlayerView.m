@@ -8,6 +8,12 @@
 
 #import "ZBAudioPlayerView.h"
 
+@interface ZBAudioPlayerView ()
+
+@property (nonatomic, weak) IBOutlet UIButton *playButton;
+
+@end
+
 @implementation ZBAudioPlayerView
 
 - (id)initWithFrame:(CGRect)frame
@@ -22,6 +28,18 @@
 - (IBAction)playOrPause:(id)sender
 {
     [self.delegate playOrPauseCurrentTrack];
+    
+    UIButton *button = (UIButton *)sender;
+    
+    
+    if ([self.playButton.titleLabel.text isEqualToString:@"Play"]) {
+        [button setTitle:@"Pause" forState:UIControlStateNormal];
+    } else if ([self.playButton.titleLabel.text isEqualToString:@"Pause"]) {
+        [button setTitle:@"Play" forState:UIControlStateNormal];
+    }
+    
+    NSLog(@"%@", self.playButton.titleLabel.text);
+    NSLog(@"%@", self.playButton.currentTitle);
 }
 
 - (IBAction)skipAheadFifteenSeconds:(id)sender

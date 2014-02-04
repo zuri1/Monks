@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZBMonk.h"
 
 @interface ZBAudioViewController : UIViewController
 
 @property (nonatomic, weak) NSURL *talkURL;
+@property (nonatomic, weak) ZBMonk *monk;
 
 @end
