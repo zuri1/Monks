@@ -53,6 +53,29 @@
         [self.backgroundMusicPlayer play];
     }
     // title may become unsynced with playing state...
+    
+}
+- (void)skipAheadFifteenSeconds
+{
+    NSTimeInterval time = [self.backgroundMusicPlayer currentTime];
+    time+=SKIP_TIME;
+    if (time > self.backgroundMusicPlayer.duration) {
+        //nothing to do
+    } else {
+        [self.backgroundMusicPlayer setCurrentTime:time];
+    }
+    
+}
+
+- (void)goBackFifteenSeconds
+{
+    NSTimeInterval time = [self.backgroundMusicPlayer currentTime];
+    time-=SKIP_TIME;
+    if (time < 0) {
+        //nothing to do
+    } else {
+        [self.backgroundMusicPlayer setCurrentTime:time];
+    }
 }
 
 - (void)didReceiveMemoryWarning
