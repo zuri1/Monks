@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZBViewController : UIViewController
+@interface ZBAudioViewController : UIViewController
 
 @property (nonatomic, weak) NSURL *talkURL;
 

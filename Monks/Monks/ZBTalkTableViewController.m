@@ -7,7 +7,7 @@
 //
 
 #import "ZBTalkTableViewController.h"
-#import "ZBViewController.h"
+#import "ZBAudioViewController.h"
 
 @interface ZBTalkTableViewController ()
 
@@ -80,7 +80,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"audioPlayer"]) {
-        ZBViewController *audioVC = (ZBViewController *)segue.destinationViewController;
+        ZBAudioViewController *audioVC = (ZBAudioViewController *)segue.destinationViewController;
         
         audioVC.talkURL = self.talkURLs[[self.tableView indexPathForSelectedRow].row];
     }
