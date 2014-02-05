@@ -25,6 +25,18 @@
     return self;
 }
 
+- (void)updateLabelsForTime:(NSString *)currentTime
+{
+    [self updateLabelsForTime:currentTime remainingTime:nil];
+}
+
+- (void)updateLabelsForTime:(NSString *)currentTime remainingTime:(NSString *)remainingTime
+{
+    self.timeProgressedLabel.text = currentTime;
+    self.timeRemainingLabel.text = remainingTime;
+}
+
+
 - (IBAction)playOrPause:(id)sender
 {
     [self.delegate playOrPauseCurrentTrack];

@@ -30,6 +30,8 @@
 {
     [super viewDidLoad];
 
+    self.title = @"Talks";
+    
     self.talkURLs = [[NSMutableArray alloc] init];
     
     for (NSString *string in self.monk.talks) {

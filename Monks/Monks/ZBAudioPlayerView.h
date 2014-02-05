@@ -15,6 +15,7 @@
 @optional
 - (void)skipAheadFifteenSeconds;
 - (void)goBackFifteenSeconds;
+- (void)startTimer;
 
 @end
 
@@ -23,11 +24,16 @@
 @property (nonatomic, unsafe_unretained) IBOutlet id<ZBAudioPlayerViewDelegate> delegate;
 //^why isn't this hooked up?
 
-@property (nonatomic, weak) IBOutlet UILabel *artistNameLabel, *trackNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *artistNameLabel, *trackNameLabel, *timeProgressedLabel, *timeRemainingLabel;
+@property (nonatomic, weak) IBOutlet UISlider *progressBar;
 @property (nonatomic, weak) IBOutlet UIImageView *albumArtwork;
 
 - (IBAction)playOrPause:(id)sender;
 - (IBAction)skipAheadFifteenSeconds:(id)sender;
 - (IBAction)goBackFifteenSeconds:(id)sender;
+
+- (void)updateLabelsForTime:(NSString *)currentTime;
+- (void)updateLabelsForTime:(NSString *)currentTime remainingTime:(NSString *)remainingTime;
+
 
 @end

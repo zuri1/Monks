@@ -28,6 +28,8 @@
 {
     [super viewDidLoad];
 
+    self.title = @"Monks";
+    
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ZBMonks" ofType:@"plist"];
     NSDictionary *plistDict = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     NSArray *plistArray = [plistDict objectForKey:@"Monks"];

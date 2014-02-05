@@ -15,6 +15,9 @@
 
 @property (nonatomic, strong) AVAudioPlayer *backgroundMusicPlayer;
 @property (nonatomic, weak) IBOutlet ZBAudioPlayerView *audioPlayerView;
+@property (nonatomic, strong) NSTimer *timer;
+
+- (void)playOrPauseCurrentTrack;
 
 @end
 
@@ -40,7 +43,7 @@
     NSError *error;
     _backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
     [_backgroundMusicPlayer prepareToPlay];
-    [_backgroundMusicPlayer play];
+    [self playOrPauseCurrentTrack];
     
     
 }
@@ -49,8 +52,10 @@
 {
     if ([self.backgroundMusicPlayer isPlaying]) {
         [self.backgroundMusicPlayer pause];
+        [self stopTimer];
     } else {
         [self.backgroundMusicPlayer play];
+        [self startTimer];
     }
     // title may become unsynced with playing state...
     
@@ -76,6 +81,24 @@
     } else {
         [self.backgroundMusicPlayer setCurrentTime:time];
     }
+}
+
+- (void)startTimer
+{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(didPlayForSecond) userInfo:nil repeats:YES];
+    [self.timer fire];
+}
+
+- (void)stopTimer
+{
+    [self.timer invalidate];
+}
+
+- (void)didPlayForSecond
+{
+    NSString *currentTime = [NSString stringWithFormat:@"%.0f", self.backgroundMusicPlayer.currentTime];
+    NSString *remainingTime = [NSString stringWithFormat:@"%.0f", self.backgroundMusicPlayer.duration - self.backgroundMusicPlayer.currentTime];
+    [self.audioPlayerView updateLabelsForTime:currentTime remainingTime:remainingTime];
 }
 
 - (void)didReceiveMemoryWarning
