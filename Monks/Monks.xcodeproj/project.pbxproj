@@ -18,13 +18,14 @@
 		8A8E6289187354E200746CC3 /* Ajahn Sumedho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E6280187354E200746CC3 /* Ajahn Sumedho.jpg */; };
 		8A8E628A187354E200746CC3 /* Ajahn Viradhammo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E6281187354E200746CC3 /* Ajahn Viradhammo.jpg */; };
 		8A8E628B187354E200746CC3 /* Ayya Khema.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E6282187354E200746CC3 /* Ayya Khema.jpg */; };
-		8A8E62911873588700746CC3 /* Amaro1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628D1873588700746CC3 /* Amaro1.mp3 */; };
-		8A8E62921873588700746CC3 /* Amaro2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628E1873588700746CC3 /* Amaro2.mp3 */; };
-		8A8E62931873588700746CC3 /* Amaro3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628F1873588700746CC3 /* Amaro3.mp3 */; };
-		8A8E62941873588700746CC3 /* Amaro4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E62901873588700746CC3 /* Amaro4.mp3 */; };
+		8A8E62911873588700746CC3 /* Forgiveness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628D1873588700746CC3 /* Forgiveness.mp3 */; };
+		8A8E62921873588700746CC3 /* Forgiveness Q & A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628E1873588700746CC3 /* Forgiveness Q & A.mp3 */; };
+		8A8E62931873588700746CC3 /* Removing the Dart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628F1873588700746CC3 /* Removing the Dart.mp3 */; };
+		8A8E62941873588700746CC3 /* Removing the Dart Q & A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E62901873588700746CC3 /* Removing the Dart Q & A.mp3 */; };
 		8AAB4BA0189DB1110069FB36 /* ZBMonk.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB4B9F189DB1110069FB36 /* ZBMonk.m */; };
 		8AAB4BA218A026AB0069FB36 /* ZBMonks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */; };
 		8AAB4BA518A065290069FB36 /* ZBAudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA418A065290069FB36 /* ZBAudioPlayerView.m */; };
+		8AAB4BA718A2F1340069FB36 /* From Broad View Boundless Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA618A2F1340069FB36 /* From Broad View Boundless Heart.png */; };
 		8AB45C731880D99D001B65B9 /* ZBTalkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB45C721880D99D001B65B9 /* ZBTalkTableViewController.m */; };
 		8AB45C7618810A0B001B65B9 /* ZBAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB45C7518810A0B001B65B9 /* ZBAudioViewController.m */; };
 		8ACA1A4D18578E440057D92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACA1A4C18578E440057D92E /* Foundation.framework */; };
@@ -65,15 +66,16 @@
 		8A8E6280187354E200746CC3 /* Ajahn Sumedho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ajahn Sumedho.jpg"; sourceTree = "<group>"; };
 		8A8E6281187354E200746CC3 /* Ajahn Viradhammo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ajahn Viradhammo.jpg"; sourceTree = "<group>"; };
 		8A8E6282187354E200746CC3 /* Ayya Khema.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ayya Khema.jpg"; sourceTree = "<group>"; };
-		8A8E628D1873588700746CC3 /* Amaro1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Amaro1.mp3; sourceTree = "<group>"; };
-		8A8E628E1873588700746CC3 /* Amaro2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Amaro2.mp3; sourceTree = "<group>"; };
-		8A8E628F1873588700746CC3 /* Amaro3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Amaro3.mp3; sourceTree = "<group>"; };
-		8A8E62901873588700746CC3 /* Amaro4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Amaro4.mp3; sourceTree = "<group>"; };
+		8A8E628D1873588700746CC3 /* Forgiveness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Forgiveness.mp3; sourceTree = "<group>"; };
+		8A8E628E1873588700746CC3 /* Forgiveness Q & A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Forgiveness Q & A.mp3"; sourceTree = "<group>"; };
+		8A8E628F1873588700746CC3 /* Removing the Dart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Removing the Dart.mp3"; sourceTree = "<group>"; };
+		8A8E62901873588700746CC3 /* Removing the Dart Q & A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Removing the Dart Q & A.mp3"; sourceTree = "<group>"; };
 		8AAB4B9E189DB1110069FB36 /* ZBMonk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBMonk.h; sourceTree = "<group>"; };
 		8AAB4B9F189DB1110069FB36 /* ZBMonk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBMonk.m; sourceTree = "<group>"; };
 		8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZBMonks.plist; sourceTree = "<group>"; };
 		8AAB4BA318A065290069FB36 /* ZBAudioPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBAudioPlayerView.h; sourceTree = "<group>"; };
 		8AAB4BA418A065290069FB36 /* ZBAudioPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBAudioPlayerView.m; sourceTree = "<group>"; };
+		8AAB4BA618A2F1340069FB36 /* From Broad View Boundless Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "From Broad View Boundless Heart.png"; sourceTree = "<group>"; };
 		8AB45C711880D99C001B65B9 /* ZBTalkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTalkTableViewController.h; sourceTree = "<group>"; };
 		8AB45C721880D99D001B65B9 /* ZBTalkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTalkTableViewController.m; sourceTree = "<group>"; };
 		8AB45C7418810A0B001B65B9 /* ZBAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBAudioViewController.h; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		8A8E6279187354E200746CC3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8AAB4BA618A2F1340069FB36 /* From Broad View Boundless Heart.png */,
 				8A1B9F4818959EB200538CDE /* appIcon.JPG */,
 				8A8E627A187354E200746CC3 /* Ajahn Amaro.jpg */,
 				8A8E627B187354E200746CC3 /* Ajahn Chah.jpg */,
@@ -148,10 +151,10 @@
 		8A8E628C1873588700746CC3 /* mp3s */ = {
 			isa = PBXGroup;
 			children = (
-				8A8E628D1873588700746CC3 /* Amaro1.mp3 */,
-				8A8E628E1873588700746CC3 /* Amaro2.mp3 */,
-				8A8E628F1873588700746CC3 /* Amaro3.mp3 */,
-				8A8E62901873588700746CC3 /* Amaro4.mp3 */,
+				8A8E628D1873588700746CC3 /* Forgiveness.mp3 */,
+				8A8E628E1873588700746CC3 /* Forgiveness Q & A.mp3 */,
+				8A8E628F1873588700746CC3 /* Removing the Dart.mp3 */,
+				8A8E62901873588700746CC3 /* Removing the Dart Q & A.mp3 */,
 			);
 			path = mp3s;
 			sourceTree = "<group>";
@@ -326,20 +329,21 @@
 				8A8E6285187354E200746CC3 /* Ajahn Jayasaro.jpg in Resources */,
 				8A8E6287187354E200746CC3 /* Ajahn Pasanno.jpg in Resources */,
 				8A8E6288187354E200746CC3 /* Ajahn Sona.jpg in Resources */,
-				8A8E62921873588700746CC3 /* Amaro2.mp3 in Resources */,
+				8A8E62921873588700746CC3 /* Forgiveness Q & A.mp3 in Resources */,
 				8ACA1A6518578E440057D92E /* Images.xcassets in Resources */,
 				8ACA1A5718578E440057D92E /* InfoPlist.strings in Resources */,
 				8ACA1A6018578E440057D92E /* Main.storyboard in Resources */,
-				8A8E62941873588700746CC3 /* Amaro4.mp3 in Resources */,
+				8A8E62941873588700746CC3 /* Removing the Dart Q & A.mp3 in Resources */,
 				8A8E628A187354E200746CC3 /* Ajahn Viradhammo.jpg in Resources */,
 				8A1B9F4918959EB200538CDE /* appIcon.JPG in Resources */,
 				8A8E6286187354E200746CC3 /* Ajahn Munindo.jpg in Resources */,
-				8A8E62931873588700746CC3 /* Amaro3.mp3 in Resources */,
+				8A8E62931873588700746CC3 /* Removing the Dart.mp3 in Resources */,
 				8A8E6284187354E200746CC3 /* Ajahn Chah.jpg in Resources */,
 				8AAB4BA218A026AB0069FB36 /* ZBMonks.plist in Resources */,
 				8A8E6289187354E200746CC3 /* Ajahn Sumedho.jpg in Resources */,
-				8A8E62911873588700746CC3 /* Amaro1.mp3 in Resources */,
+				8A8E62911873588700746CC3 /* Forgiveness.mp3 in Resources */,
 				8A8E628B187354E200746CC3 /* Ayya Khema.jpg in Resources */,
+				8AAB4BA718A2F1340069FB36 /* From Broad View Boundless Heart.png in Resources */,
 				8A8E6283187354E200746CC3 /* Ajahn Amaro.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,7 @@
 - (void)skipAheadFifteenSeconds;
 - (void)goBackFifteenSeconds;
 - (void)startTimer;
+- (void)slideTheSlider:(NSTimeInterval)sliderValue;
 
 @end
 
@@ -31,9 +32,10 @@
 - (IBAction)playOrPause:(id)sender;
 - (IBAction)skipAheadFifteenSeconds:(id)sender;
 - (IBAction)goBackFifteenSeconds:(id)sender;
+- (IBAction)slideTheSlider:(id)sender;
 
 - (void)updateLabelsForTime:(NSString *)currentTime;
 - (void)updateLabelsForTime:(NSString *)currentTime remainingTime:(NSString *)remainingTime;
-
+- (void)updateSliderForTime:(NSTimeInterval)currentTimeInterval remainingTime:(NSTimeInterval)remainingTimeInterval;
 
 @end

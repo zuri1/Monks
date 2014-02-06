@@ -8,12 +8,11 @@
 
 #import "ZBAudioViewController.h"
 #import <TDAudioPlayer/TDAudioPlayer.h>
-#import <AVFoundation/AVFoundation.h>
 #import "ZBAudioPlayerView.h"
 
 @interface ZBAudioViewController () <ZBAudioPlayerViewDelegate>
 
-@property (nonatomic, strong) AVAudioPlayer *backgroundMusicPlayer;
+
 @property (nonatomic, weak) IBOutlet ZBAudioPlayerView *audioPlayerView;
 @property (nonatomic, strong) NSTimer *timer;
 
@@ -96,10 +95,23 @@
 
 - (void)didPlayForSecond
 {
-    NSString *currentTime = [NSString stringWithFormat:@"%.0f", self.backgroundMusicPlayer.currentTime];
-    NSString *remainingTime = [NSString stringWithFormat:@"%.0f", self.backgroundMusicPlayer.duration - self.backgroundMusicPlayer.currentTime];
+    NSString *currentTime = [NSString stringWithFormat:@"%d:%02d", (int)self.backgroundMusicPlayer.currentTime / 60, (int)self.backgroundMusicPlayer.currentTime % 60, nil];
+    NSString *remainingTime = [NSString stringWithFormat:@"-%d:%02d", (int)(self.backgroundMusicPlayer.duration - self.backgroundMusicPlayer.currentTime) / 60, (int)(self.backgroundMusicPlayer.duration - self.backgroundMusicPlayer.currentTime) % 60, nil];
     [self.audioPlayerView updateLabelsForTime:currentTime remainingTime:remainingTime];
+    
+    [self.audioPlayerView updateSliderForTime:[self.backgroundMusicPlayer currentTime] remainingTime:[self.backgroundMusicPlayer duration]];
 }
+
+- (void)slideTheSlider:(NSTimeInterval)sliderValue
+{
+    self.backgroundMusicPlayer.currentTime = self.backgroundMusicPlayer.duration * sliderValue;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self.backgroundMusicPlayer stop];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

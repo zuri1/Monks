@@ -36,6 +36,10 @@
     self.timeRemainingLabel.text = remainingTime;
 }
 
+- (void)updateSliderForTime:(NSTimeInterval)currentTimeInterval remainingTime:(NSTimeInterval)remainingTimeInterval
+{
+    self.progressBar.value = currentTimeInterval / remainingTimeInterval;
+}
 
 - (IBAction)playOrPause:(id)sender
 {
@@ -64,5 +68,11 @@
     [self.delegate goBackFifteenSeconds];
 }
 
+- (IBAction)slideTheSlider:(id)sender
+{
+    UISlider *slider = (UISlider *)sender;
+    NSTimeInterval senderValue = (NSTimeInterval)slider.value;
+    [self.delegate slideTheSlider:senderValue];
+}
 
 @end
