@@ -70,9 +70,9 @@
     static NSString *CellIdentifier = @"Cell";
     ZBTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.name.text = [_monks[indexPath.row] name];
-    cell.imageView.image = [_monks[indexPath.row] image];
+    cell.avatarImageView.image = [_monks[indexPath.row] image];
     
     return cell;
 }

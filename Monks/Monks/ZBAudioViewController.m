@@ -15,6 +15,7 @@
 
 @property (nonatomic, weak) IBOutlet ZBAudioPlayerView *audioPlayerView;
 @property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) UIActivityIndicatorView *loadingView;
 
 - (void)playOrPauseCurrentTrack;
 
@@ -39,12 +40,27 @@
     self.audioPlayerView.albumArtwork.image = self.monk.image;
     self.audioPlayerView.trackNameLabel.text = self.monk.currentTalk;
     
+    }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.loadingView = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(150, 250, 44, 44)];
+    [self.view addSubview:self.loadingView];
+    [self.loadingView startAnimating];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
     NSError *error;
     _backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
     [_backgroundMusicPlayer prepareToPlay];
     [self playOrPauseCurrentTrack];
     
-    
+
 }
 
 - (void)playOrPauseCurrentTrack
@@ -55,6 +71,7 @@
     } else {
         [self.backgroundMusicPlayer play];
         [self startTimer];
+        [_loadingView removeFromSuperview];
     }
     // title may become unsynced with playing state...
     

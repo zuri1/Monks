@@ -14,6 +14,6 @@
 @property (nonatomic) ZBMonk *monk;
 
 @property (nonatomic) IBOutlet UILabel *name;
-@property (nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic) IBOutlet UIImageView *avatarImageView;
 
 @end
