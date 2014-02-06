@@ -25,7 +25,7 @@
 		8AAB4BA0189DB1110069FB36 /* ZBMonk.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB4B9F189DB1110069FB36 /* ZBMonk.m */; };
 		8AAB4BA218A026AB0069FB36 /* ZBMonks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */; };
 		8AAB4BA518A065290069FB36 /* ZBAudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA418A065290069FB36 /* ZBAudioPlayerView.m */; };
-		8AAB4BA718A2F1340069FB36 /* From Broad View Boundless Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA618A2F1340069FB36 /* From Broad View Boundless Heart.png */; };
+		8AAB4BA718A2F1340069FB36 /* BroadView.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA618A2F1340069FB36 /* BroadView.png */; };
 		8AB45C731880D99D001B65B9 /* ZBTalkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB45C721880D99D001B65B9 /* ZBTalkTableViewController.m */; };
 		8AB45C7618810A0B001B65B9 /* ZBAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB45C7518810A0B001B65B9 /* ZBAudioViewController.m */; };
 		8ACA1A4D18578E440057D92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACA1A4C18578E440057D92E /* Foundation.framework */; };
@@ -75,7 +75,7 @@
 		8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZBMonks.plist; sourceTree = "<group>"; };
 		8AAB4BA318A065290069FB36 /* ZBAudioPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBAudioPlayerView.h; sourceTree = "<group>"; };
 		8AAB4BA418A065290069FB36 /* ZBAudioPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBAudioPlayerView.m; sourceTree = "<group>"; };
-		8AAB4BA618A2F1340069FB36 /* From Broad View Boundless Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "From Broad View Boundless Heart.png"; sourceTree = "<group>"; };
+		8AAB4BA618A2F1340069FB36 /* BroadView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BroadView.png; sourceTree = "<group>"; };
 		8AB45C711880D99C001B65B9 /* ZBTalkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTalkTableViewController.h; sourceTree = "<group>"; };
 		8AB45C721880D99D001B65B9 /* ZBTalkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTalkTableViewController.m; sourceTree = "<group>"; };
 		8AB45C7418810A0B001B65B9 /* ZBAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBAudioViewController.h; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		8A8E6279187354E200746CC3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8AAB4BA618A2F1340069FB36 /* From Broad View Boundless Heart.png */,
+				8AAB4BA618A2F1340069FB36 /* BroadView.png */,
 				8A1B9F4818959EB200538CDE /* appIcon.JPG */,
 				8A8E627A187354E200746CC3 /* Ajahn Amaro.jpg */,
 				8A8E627B187354E200746CC3 /* Ajahn Chah.jpg */,
@@ -343,7 +343,7 @@
 				8A8E6289187354E200746CC3 /* Ajahn Sumedho.jpg in Resources */,
 				8A8E62911873588700746CC3 /* Forgiveness.mp3 in Resources */,
 				8A8E628B187354E200746CC3 /* Ayya Khema.jpg in Resources */,
-				8AAB4BA718A2F1340069FB36 /* From Broad View Boundless Heart.png in Resources */,
+				8AAB4BA718A2F1340069FB36 /* BroadView.png in Resources */,
 				8A8E6283187354E200746CC3 /* Ajahn Amaro.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

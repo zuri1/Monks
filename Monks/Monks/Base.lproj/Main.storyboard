@@ -114,6 +114,10 @@
                                 <rect key="frame" x="0.0" y="124" width="320" height="378"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8x-Mi-CD7">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="378"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWa-ZU-5XB">
                                         <rect key="frame" x="92" y="290" width="136" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -145,7 +149,7 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzU-wC-j5y">
-                                        <rect key="frame" x="60" y="20" width="200" height="200"/>
+                                        <rect key="frame" x="20" y="20" width="108" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cz3-3U-TCy">
@@ -188,6 +192,7 @@
                                 <connections>
                                     <outlet property="albumArtwork" destination="BzU-wC-j5y" id="jsH-7J-Chc"/>
                                     <outlet property="artistNameLabel" destination="hAo-Tu-atx" id="ohD-mA-M0x"/>
+                                    <outlet property="backgroundArtwork" destination="f8x-Mi-CD7" id="sqR-RC-iaw"/>
                                     <outlet property="delegate" destination="DIo-KM-TQc" id="7Me-uf-SdH"/>
                                     <outlet property="playButton" destination="AWa-ZU-5XB" id="ROV-hR-4LJ"/>
                                     <outlet property="progressBar" destination="D9p-8I-xKK" id="FyH-gW-2hE"/>

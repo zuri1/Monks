@@ -28,6 +28,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *artistNameLabel, *trackNameLabel, *timeProgressedLabel, *timeRemainingLabel;
 @property (nonatomic, weak) IBOutlet UISlider *progressBar;
 @property (nonatomic, weak) IBOutlet UIImageView *albumArtwork;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundArtwork;
 
 - (IBAction)playOrPause:(id)sender;
 - (IBAction)skipAheadFifteenSeconds:(id)sender;

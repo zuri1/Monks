@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) UIActivityIndicatorView *loadingView;
 
+
 - (void)playOrPauseCurrentTrack;
 
 @end
@@ -37,8 +38,9 @@
     [super viewDidLoad];
     
     self.audioPlayerView.artistNameLabel.text = self.monk.name;
-    self.audioPlayerView.albumArtwork.image = self.monk.image;
     self.audioPlayerView.trackNameLabel.text = self.monk.currentTalk;
+    self.audioPlayerView.albumArtwork.image = self.monk.image;
+    self.audioPlayerView.backgroundArtwork.image = [UIImage imageNamed:@"BroadView.png"];
     
     }
 
