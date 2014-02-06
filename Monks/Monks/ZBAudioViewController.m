@@ -87,7 +87,7 @@
     } else {
         [self.backgroundMusicPlayer setCurrentTime:time];
     }
-    
+    [self didPlayForSecond];
 }
 
 - (void)goBackFifteenSeconds
@@ -99,6 +99,7 @@
     } else {
         [self.backgroundMusicPlayer setCurrentTime:time];
     }
+    [self didPlayForSecond];
 }
 
 - (void)startTimer
