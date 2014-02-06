@@ -45,17 +45,18 @@
 {
     [self.delegate playOrPauseCurrentTrack];
     
-    UIButton *button = (UIButton *)sender;
+    UIBarButtonItem *button = (UIBarButtonItem *)sender;
     
-    
-    if ([self.playButton.titleLabel.text isEqualToString:@"Play"]) {
-        [button setTitle:@"Pause" forState:UIControlStateNormal];
-    } else if ([self.playButton.titleLabel.text isEqualToString:@"Pause"]) {
-        [button setTitle:@"Play" forState:UIControlStateNormal];
+    if (button.tag == 1) {
+        [button setImage:[UIImage imageNamed:@"PlayIcon.png"]];
+        [button setTag:0];
+        NSLog(@"%d", button.tag);
+    } else {
+        [button setImage:[UIImage imageNamed:@"PauseIcon.png"]];
+        [button setTag:1];
+        NSLog(@"%d", button.tag);
     }
     
-    NSLog(@"%@", self.playButton.titleLabel.text);
-    NSLog(@"%@", self.playButton.currentTitle);
 }
 
 - (IBAction)skipAheadFifteenSeconds:(id)sender
