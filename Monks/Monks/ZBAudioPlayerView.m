@@ -48,11 +48,11 @@
     UIBarButtonItem *button = (UIBarButtonItem *)sender;
     
     if (button.tag == 1) {
-        [button setImage:[UIImage imageNamed:@"PlayIcon.png"]];
+        [button setImage:[UIImage imageNamed:@"PauseIcon.png"]];
         [button setTag:0];
         NSLog(@"%d", button.tag);
     } else {
-        [button setImage:[UIImage imageNamed:@"PauseIcon.png"]];
+        [button setImage:[UIImage imageNamed:@"PlayIcon.png"]];
         [button setTag:1];
         NSLog(@"%d", button.tag);
     }

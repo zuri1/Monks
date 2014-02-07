@@ -148,7 +148,7 @@
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="Rgl-CP-PQ0"/>
-                                            <barButtonItem image="PlayIcon" id="HzL-cD-aVB">
+                                            <barButtonItem image="PauseIcon" id="HzL-cD-aVB">
                                                 <connections>
                                                     <action selector="playOrPause:" destination="xq4-vv-hK9" id="p2a-iv-MAR"/>
                                                 </connections>
@@ -257,7 +257,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PlayIcon" width="30" height="30"/>
+        <image name="PauseIcon" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

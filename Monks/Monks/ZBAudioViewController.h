@@ -10,9 +10,17 @@
 #import "ZBMonk.h"
 #import <AVFoundation/AVFoundation.h>
 
+@protocol ZBAudioViewControllerDelegate <NSObject>
+
+@required
+- (void)stopPlayingTrack;
+
+@end
+
 @interface ZBAudioViewController : UIViewController
 
-@property (nonatomic, strong) AVAudioPlayer *backgroundMusicPlayer;
+@property (nonatomic, unsafe_unretained) IBOutlet id<ZBAudioViewControllerDelegate> delegate;
+@property (nonatomic, strong) AVAudioPlayer *sharedAudioPlayer;
 @property (nonatomic, weak) NSURL *talkURL;
 @property (nonatomic, weak) ZBMonk *monk;
 

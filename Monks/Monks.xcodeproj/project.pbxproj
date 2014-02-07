@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7B87603790ED46248231E0A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BDB03746564F28A371FC11 /* libPods.a */; };
+		8A15379F18A45D4B007CBFA9 /* Mindfulness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A15379E18A45D4B007CBFA9 /* Mindfulness.mp3 */; };
+		8A1537A118A45F2C007CBFA9 /* Dukkha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A018A45F2C007CBFA9 /* Dukkha.mp3 */; };
+		8A1537A318A46031007CBFA9 /* Conditions of the Mind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A218A46031007CBFA9 /* Conditions of the Mind.mp3 */; };
+		8A1537A518A4607A007CBFA9 /* Being a Monk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A418A4607A007CBFA9 /* Being a Monk.mp3 */; };
+		8A1537A718A460C2007CBFA9 /* Six Teachers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A618A460C2007CBFA9 /* Six Teachers.mp3 */; };
+		8A1537A918A4611B007CBFA9 /* Guided Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A818A4611B007CBFA9 /* Guided Meditation.mp3 */; };
+		8A1537AB18A46146007CBFA9 /* Letting the World End.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537AA18A46146007CBFA9 /* Letting the World End.mp3 */; };
+		8A1537AD18A46584007CBFA9 /* Meditation Opens Possibilities.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537AC18A46584007CBFA9 /* Meditation Opens Possibilities.mp3 */; };
+		8A1537AF18A46699007CBFA9 /* Compassion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537AE18A46699007CBFA9 /* Compassion.mp3 */; };
+		8A1537B118A466BC007CBFA9 /* Introduction to Mindfulness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537B018A466BC007CBFA9 /* Introduction to Mindfulness.mp3 */; };
+		8A1537B318A46701007CBFA9 /* Lovingkindness Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537B218A46701007CBFA9 /* Lovingkindness Meditation.mp3 */; };
+		8A1537B618A46749007CBFA9 /* Holiday For The Heart 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537B418A46749007CBFA9 /* Holiday For The Heart 1.mp3 */; };
+		8A1537B718A46749007CBFA9 /* Holiday For The Heart 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537B518A46749007CBFA9 /* Holiday For The Heart 2.mp3 */; };
+		8A1537B918A467BC007CBFA9 /* Buddhist Practice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537B818A467BC007CBFA9 /* Buddhist Practice.mp3 */; };
+		8A1537BB18A4680D007CBFA9 /* Dhamma Talk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537BA18A4680D007CBFA9 /* Dhamma Talk.mp3 */; };
+		8A1537BD18A46838007CBFA9 /* Buddhist Psychology.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537BC18A46838007CBFA9 /* Buddhist Psychology.mp3 */; };
+		8A1537BF18A46878007CBFA9 /* Mindfulness and Beyond.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537BE18A46878007CBFA9 /* Mindfulness and Beyond.mp3 */; };
+		8A1537C118A468F2007CBFA9 /* Meditation Technique.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537C018A468F2007CBFA9 /* Meditation Technique.mp3 */; };
 		8A1B9F4918959EB200538CDE /* appIcon.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B9F4818959EB200538CDE /* appIcon.JPG */; };
 		8A8E6283187354E200746CC3 /* Ajahn Amaro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E627A187354E200746CC3 /* Ajahn Amaro.jpg */; };
 		8A8E6284187354E200746CC3 /* Ajahn Chah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E627B187354E200746CC3 /* Ajahn Chah.jpg */; };
@@ -56,6 +74,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A15379E18A45D4B007CBFA9 /* Mindfulness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mindfulness.mp3; sourceTree = "<group>"; };
+		8A1537A018A45F2C007CBFA9 /* Dukkha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dukkha.mp3; sourceTree = "<group>"; };
+		8A1537A218A46031007CBFA9 /* Conditions of the Mind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Conditions of the Mind.mp3"; sourceTree = "<group>"; };
+		8A1537A418A4607A007CBFA9 /* Being a Monk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Being a Monk.mp3"; sourceTree = "<group>"; };
+		8A1537A618A460C2007CBFA9 /* Six Teachers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Six Teachers.mp3"; sourceTree = "<group>"; };
+		8A1537A818A4611B007CBFA9 /* Guided Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Guided Meditation.mp3"; sourceTree = "<group>"; };
+		8A1537AA18A46146007CBFA9 /* Letting the World End.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Letting the World End.mp3"; sourceTree = "<group>"; };
+		8A1537AC18A46584007CBFA9 /* Meditation Opens Possibilities.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Meditation Opens Possibilities.mp3"; sourceTree = "<group>"; };
+		8A1537AE18A46699007CBFA9 /* Compassion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Compassion.mp3; sourceTree = "<group>"; };
+		8A1537B018A466BC007CBFA9 /* Introduction to Mindfulness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Introduction to Mindfulness.mp3"; sourceTree = "<group>"; };
+		8A1537B218A46701007CBFA9 /* Lovingkindness Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lovingkindness Meditation.mp3"; sourceTree = "<group>"; };
+		8A1537B418A46749007CBFA9 /* Holiday For The Heart 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Holiday For The Heart 1.mp3"; sourceTree = "<group>"; };
+		8A1537B518A46749007CBFA9 /* Holiday For The Heart 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Holiday For The Heart 2.mp3"; sourceTree = "<group>"; };
+		8A1537B818A467BC007CBFA9 /* Buddhist Practice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Buddhist Practice.mp3"; sourceTree = "<group>"; };
+		8A1537BA18A4680D007CBFA9 /* Dhamma Talk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dhamma Talk.mp3"; sourceTree = "<group>"; };
+		8A1537BC18A46838007CBFA9 /* Buddhist Psychology.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Buddhist Psychology.mp3"; sourceTree = "<group>"; };
+		8A1537BE18A46878007CBFA9 /* Mindfulness and Beyond.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mindfulness and Beyond.mp3"; sourceTree = "<group>"; };
+		8A1537C018A468F2007CBFA9 /* Meditation Technique.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Meditation Technique.mp3"; sourceTree = "<group>"; };
 		8A1B9F4818959EB200538CDE /* appIcon.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appIcon.JPG; sourceTree = "<group>"; };
 		8A8E627A187354E200746CC3 /* Ajahn Amaro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ajahn Amaro.jpg"; sourceTree = "<group>"; };
 		8A8E627B187354E200746CC3 /* Ajahn Chah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ajahn Chah.jpg"; sourceTree = "<group>"; };
@@ -151,10 +187,28 @@
 		8A8E628C1873588700746CC3 /* mp3s */ = {
 			isa = PBXGroup;
 			children = (
+				8A1537AC18A46584007CBFA9 /* Meditation Opens Possibilities.mp3 */,
+				8A1537AA18A46146007CBFA9 /* Letting the World End.mp3 */,
+				8A1537B418A46749007CBFA9 /* Holiday For The Heart 1.mp3 */,
+				8A1537B518A46749007CBFA9 /* Holiday For The Heart 2.mp3 */,
+				8A1537A818A4611B007CBFA9 /* Guided Meditation.mp3 */,
+				8A1537BA18A4680D007CBFA9 /* Dhamma Talk.mp3 */,
+				8A1537BE18A46878007CBFA9 /* Mindfulness and Beyond.mp3 */,
+				8A1537C018A468F2007CBFA9 /* Meditation Technique.mp3 */,
+				8A1537A618A460C2007CBFA9 /* Six Teachers.mp3 */,
+				8A1537A418A4607A007CBFA9 /* Being a Monk.mp3 */,
+				8A1537A218A46031007CBFA9 /* Conditions of the Mind.mp3 */,
+				8A1537B818A467BC007CBFA9 /* Buddhist Practice.mp3 */,
+				8A1537A018A45F2C007CBFA9 /* Dukkha.mp3 */,
+				8A1537AE18A46699007CBFA9 /* Compassion.mp3 */,
+				8A1537B218A46701007CBFA9 /* Lovingkindness Meditation.mp3 */,
+				8A1537B018A466BC007CBFA9 /* Introduction to Mindfulness.mp3 */,
+				8A15379E18A45D4B007CBFA9 /* Mindfulness.mp3 */,
 				8A8E628D1873588700746CC3 /* Forgiveness.mp3 */,
 				8A8E628E1873588700746CC3 /* Forgiveness Q & A.mp3 */,
 				8A8E628F1873588700746CC3 /* Removing the Dart.mp3 */,
 				8A8E62901873588700746CC3 /* Removing the Dart Q & A.mp3 */,
+				8A1537BC18A46838007CBFA9 /* Buddhist Psychology.mp3 */,
 			);
 			path = mp3s;
 			sourceTree = "<group>";
@@ -326,25 +380,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1537AF18A46699007CBFA9 /* Compassion.mp3 in Resources */,
 				8A8E6285187354E200746CC3 /* Ajahn Jayasaro.jpg in Resources */,
+				8A1537BD18A46838007CBFA9 /* Buddhist Psychology.mp3 in Resources */,
 				8A8E6287187354E200746CC3 /* Ajahn Pasanno.jpg in Resources */,
+				8A1537C118A468F2007CBFA9 /* Meditation Technique.mp3 in Resources */,
 				8A8E6288187354E200746CC3 /* Ajahn Sona.jpg in Resources */,
+				8A1537A718A460C2007CBFA9 /* Six Teachers.mp3 in Resources */,
 				8A8E62921873588700746CC3 /* Forgiveness Q & A.mp3 in Resources */,
 				8ACA1A6518578E440057D92E /* Images.xcassets in Resources */,
+				8A1537AB18A46146007CBFA9 /* Letting the World End.mp3 in Resources */,
 				8ACA1A5718578E440057D92E /* InfoPlist.strings in Resources */,
 				8ACA1A6018578E440057D92E /* Main.storyboard in Resources */,
 				8A8E62941873588700746CC3 /* Removing the Dart Q & A.mp3 in Resources */,
 				8A8E628A187354E200746CC3 /* Ajahn Viradhammo.jpg in Resources */,
+				8A1537B618A46749007CBFA9 /* Holiday For The Heart 1.mp3 in Resources */,
+				8A1537BB18A4680D007CBFA9 /* Dhamma Talk.mp3 in Resources */,
 				8A1B9F4918959EB200538CDE /* appIcon.JPG in Resources */,
+				8A1537A118A45F2C007CBFA9 /* Dukkha.mp3 in Resources */,
 				8A8E6286187354E200746CC3 /* Ajahn Munindo.jpg in Resources */,
+				8A1537B718A46749007CBFA9 /* Holiday For The Heart 2.mp3 in Resources */,
 				8A8E62931873588700746CC3 /* Removing the Dart.mp3 in Resources */,
 				8A8E6284187354E200746CC3 /* Ajahn Chah.jpg in Resources */,
 				8AAB4BA218A026AB0069FB36 /* ZBMonks.plist in Resources */,
+				8A1537AD18A46584007CBFA9 /* Meditation Opens Possibilities.mp3 in Resources */,
+				8A1537A518A4607A007CBFA9 /* Being a Monk.mp3 in Resources */,
+				8A1537BF18A46878007CBFA9 /* Mindfulness and Beyond.mp3 in Resources */,
+				8A1537A318A46031007CBFA9 /* Conditions of the Mind.mp3 in Resources */,
+				8A1537A918A4611B007CBFA9 /* Guided Meditation.mp3 in Resources */,
+				8A1537B318A46701007CBFA9 /* Lovingkindness Meditation.mp3 in Resources */,
+				8A1537B918A467BC007CBFA9 /* Buddhist Practice.mp3 in Resources */,
 				8A8E6289187354E200746CC3 /* Ajahn Sumedho.jpg in Resources */,
 				8A8E62911873588700746CC3 /* Forgiveness.mp3 in Resources */,
 				8A8E628B187354E200746CC3 /* Ayya Khema.jpg in Resources */,
 				8AAB4BA718A2F1340069FB36 /* BroadView.png in Resources */,
+				8A1537B118A466BC007CBFA9 /* Introduction to Mindfulness.mp3 in Resources */,
 				8A8E6283187354E200746CC3 /* Ajahn Amaro.jpg in Resources */,
+				8A15379F18A45D4B007CBFA9 /* Mindfulness.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

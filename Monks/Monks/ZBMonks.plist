@@ -11,55 +11,81 @@
 				<string>Forgiveness Q &amp; A</string>
 				<string>Removing the Dart</string>
 				<string>Removing the Dart Q &amp; A</string>
+				<string>Buddhist Psychology</string>
 			</array>
 			<key>name</key>
 			<string>Ajahn Amaro</string>
 		</dict>
 		<dict>
 			<key>talks</key>
-			<array/>
+			<array>
+				<string>Conditions of the Mind</string>
+				<string>Buddhist Practice</string>
+			</array>
 			<key>name</key>
 			<string>Ajahn Chah</string>
 		</dict>
 		<dict>
 			<key>talks</key>
-			<array/>
+			<array>
+				<string>Meditation Technique</string>
+				<string>Guided Meditation</string>
+				<string>Dhamma Talk</string>
+				<string>Mindfulness and Beyond</string>
+			</array>
 			<key>name</key>
 			<string>Ajahn Jayasaro</string>
 		</dict>
 		<dict>
 			<key>talks</key>
-			<array/>
+			<array>
+				<string>Six Teachers</string>
+			</array>
 			<key>name</key>
 			<string>Ajahn Munindo</string>
 		</dict>
 		<dict>
 			<key>talks</key>
-			<array/>
+			<array>
+				<string>Mindfulness</string>
+			</array>
 			<key>name</key>
 			<string>Ajahn Pasanno</string>
 		</dict>
 		<dict>
 			<key>talks</key>
-			<array/>
+			<array>
+				<string>Meditation Opens Possibilities</string>
+			</array>
 			<key>name</key>
 			<string>Ajahn Sona</string>
 		</dict>
 		<dict>
 			<key>talks</key>
-			<array/>
+			<array>
+				<string>Letting the World End</string>
+				<string>Holiday For The Heart 1</string>
+				<string>Holiday For The Heart 2</string>
+			</array>
 			<key>name</key>
 			<string>Ajahn Sumedho</string>
 		</dict>
 		<dict>
 			<key>talks</key>
-			<array/>
+			<array>
+				<string>Being a Monk</string>
+			</array>
 			<key>name</key>
 			<string>Ajahn Viradhammo</string>
 		</dict>
 		<dict>
 			<key>talks</key>
-			<array/>
+			<array>
+				<string>Introduction to Mindfulness</string>
+				<string>Lovingkindness Meditation</string>
+				<string>Compassion</string>
+				<string>Dukkha</string>
+			</array>
 			<key>name</key>
 			<string>Ayya Khema</string>
 		</dict>

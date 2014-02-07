@@ -32,6 +32,16 @@
     }
     return self;
 }
+ 
++(AVAudioPlayer *)sharedAudioPlayer {
+    static dispatch_once_t pred;
+    static AVAudioPlayer *shared = nil;
+
+    dispatch_once(&pred, ^{
+        shared = [[AVAudioPlayer alloc] init];
+    });
+    return shared;
+}
 
 - (void)viewDidLoad
 {
@@ -58,8 +68,8 @@
     [super viewDidAppear:animated];
     
     NSError *error;
-    _backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
-    [_backgroundMusicPlayer prepareToPlay];
+    self.sharedAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
+    [self.sharedAudioPlayer prepareToPlay];
     [self playOrPauseCurrentTrack];
     
 
@@ -67,11 +77,11 @@
 
 - (void)playOrPauseCurrentTrack
 {
-    if ([self.backgroundMusicPlayer isPlaying]) {
-        [self.backgroundMusicPlayer pause];
+    if ([self.sharedAudioPlayer isPlaying]) {
+        [self.sharedAudioPlayer pause];
         [self stopTimer];
     } else {
-        [self.backgroundMusicPlayer play];
+        [self.sharedAudioPlayer play];
         [self startTimer];
         [_loadingView removeFromSuperview];
     }
@@ -80,24 +90,24 @@
 }
 - (void)skipAheadFifteenSeconds
 {
-    NSTimeInterval time = [self.backgroundMusicPlayer currentTime];
+    NSTimeInterval time = [self.sharedAudioPlayer currentTime];
     time+=SKIP_TIME;
-    if (time > self.backgroundMusicPlayer.duration) {
+    if (time > self.sharedAudioPlayer.duration) {
         //nothing to do
     } else {
-        [self.backgroundMusicPlayer setCurrentTime:time];
+        [self.sharedAudioPlayer setCurrentTime:time];
     }
     [self didPlayForSecond];
 }
 
 - (void)goBackFifteenSeconds
 {
-    NSTimeInterval time = [self.backgroundMusicPlayer currentTime];
+    NSTimeInterval time = [self.sharedAudioPlayer currentTime];
     time-=SKIP_TIME;
     if (time < 0) {
         //nothing to do
     } else {
-        [self.backgroundMusicPlayer setCurrentTime:time];
+        [self.sharedAudioPlayer setCurrentTime:time];
     }
     [self didPlayForSecond];
 }
@@ -115,22 +125,22 @@
 
 - (void)didPlayForSecond
 {
-    NSString *currentTime = [NSString stringWithFormat:@"%d:%02d", (int)self.backgroundMusicPlayer.currentTime / 60, (int)self.backgroundMusicPlayer.currentTime % 60, nil];
-    NSString *remainingTime = [NSString stringWithFormat:@"-%d:%02d", (int)(self.backgroundMusicPlayer.duration - self.backgroundMusicPlayer.currentTime) / 60, (int)(self.backgroundMusicPlayer.duration - self.backgroundMusicPlayer.currentTime) % 60, nil];
+    NSString *currentTime = [NSString stringWithFormat:@"%d:%02d", (int)self.sharedAudioPlayer.currentTime / 60, (int)self.sharedAudioPlayer.currentTime % 60, nil];
+    NSString *remainingTime = [NSString stringWithFormat:@"-%d:%02d", (int)(self.sharedAudioPlayer.duration - self.sharedAudioPlayer.currentTime) / 60, (int)(self.sharedAudioPlayer.duration - self.sharedAudioPlayer.currentTime) % 60, nil];
     [self.audioPlayerView updateLabelsForTime:currentTime remainingTime:remainingTime];
     
-    [self.audioPlayerView updateSliderForTime:[self.backgroundMusicPlayer currentTime] remainingTime:[self.backgroundMusicPlayer duration]];
+    [self.audioPlayerView updateSliderForTime:[self.sharedAudioPlayer currentTime] remainingTime:[self.sharedAudioPlayer duration]];
 }
 
 - (void)slideTheSlider:(NSTimeInterval)sliderValue
 {
-    self.backgroundMusicPlayer.currentTime = self.backgroundMusicPlayer.duration * sliderValue;
+    self.sharedAudioPlayer.currentTime = self.sharedAudioPlayer.duration * sliderValue;
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [self.backgroundMusicPlayer stop];
-}
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//    [self.backgroundMusicPlayer stop];
+//}
 
 
 - (void)didReceiveMemoryWarning

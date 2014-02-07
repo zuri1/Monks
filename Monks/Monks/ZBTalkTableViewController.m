@@ -82,10 +82,13 @@
     if ([segue.identifier isEqualToString:@"audioPlayer"]) {
         ZBAudioViewController *audioVC = (ZBAudioViewController *)segue.destinationViewController;
         
+        [audioVC.sharedAudioPlayer stop];
+        
         audioVC.talkURL = self.talkURLs[[self.tableView indexPathForSelectedRow].row];
         audioVC.monk = self.monk;
         
         audioVC.monk.currentTalk = self.monk.talks[[self.tableView indexPathForSelectedRow].row];
+
     }
 
 }
