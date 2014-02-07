@@ -40,6 +40,7 @@
 		8A8E62921873588700746CC3 /* Forgiveness Q & A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628E1873588700746CC3 /* Forgiveness Q & A.mp3 */; };
 		8A8E62931873588700746CC3 /* Removing the Dart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628F1873588700746CC3 /* Removing the Dart.mp3 */; };
 		8A8E62941873588700746CC3 /* Removing the Dart Q & A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E62901873588700746CC3 /* Removing the Dart Q & A.mp3 */; };
+		8AA8A47C18A48147003EFF0A /* ZBSharedAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8A47B18A48147003EFF0A /* ZBSharedAudioPlayer.m */; };
 		8AAB4BA0189DB1110069FB36 /* ZBMonk.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB4B9F189DB1110069FB36 /* ZBMonk.m */; };
 		8AAB4BA218A026AB0069FB36 /* ZBMonks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */; };
 		8AAB4BA518A065290069FB36 /* ZBAudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA418A065290069FB36 /* ZBAudioPlayerView.m */; };
@@ -106,6 +107,8 @@
 		8A8E628E1873588700746CC3 /* Forgiveness Q & A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Forgiveness Q & A.mp3"; sourceTree = "<group>"; };
 		8A8E628F1873588700746CC3 /* Removing the Dart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Removing the Dart.mp3"; sourceTree = "<group>"; };
 		8A8E62901873588700746CC3 /* Removing the Dart Q & A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Removing the Dart Q & A.mp3"; sourceTree = "<group>"; };
+		8AA8A47A18A48147003EFF0A /* ZBSharedAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBSharedAudioPlayer.h; sourceTree = "<group>"; };
+		8AA8A47B18A48147003EFF0A /* ZBSharedAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBSharedAudioPlayer.m; sourceTree = "<group>"; };
 		8AAB4B9E189DB1110069FB36 /* ZBMonk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBMonk.h; sourceTree = "<group>"; };
 		8AAB4B9F189DB1110069FB36 /* ZBMonk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBMonk.m; sourceTree = "<group>"; };
 		8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZBMonks.plist; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 				8AB45C7518810A0B001B65B9 /* ZBAudioViewController.m */,
 				8AAB4B9E189DB1110069FB36 /* ZBMonk.h */,
 				8AAB4B9F189DB1110069FB36 /* ZBMonk.m */,
+				8AA8A47A18A48147003EFF0A /* ZBSharedAudioPlayer.h */,
+				8AA8A47B18A48147003EFF0A /* ZBSharedAudioPlayer.m */,
 				8ACA1A6418578E440057D92E /* Images.xcassets */,
 				8A8E6279187354E200746CC3 /* Images */,
 				8A8E628C1873588700746CC3 /* mp3s */,
@@ -471,6 +476,7 @@
 				8ACA1A83185790D90057D92E /* ZBTableViewController.m in Sources */,
 				8ACA1A5D18578E440057D92E /* ZBAppDelegate.m in Sources */,
 				8AB45C7618810A0B001B65B9 /* ZBAudioViewController.m in Sources */,
+				8AA8A47C18A48147003EFF0A /* ZBSharedAudioPlayer.m in Sources */,
 				8AB45C731880D99D001B65B9 /* ZBTalkTableViewController.m in Sources */,
 				8AAB4BA518A065290069FB36 /* ZBAudioPlayerView.m in Sources */,
 				8ACA1A5918578E440057D92E /* main.m in Sources */,

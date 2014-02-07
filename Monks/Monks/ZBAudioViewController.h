@@ -20,7 +20,6 @@
 @interface ZBAudioViewController : UIViewController
 
 @property (nonatomic, unsafe_unretained) IBOutlet id<ZBAudioViewControllerDelegate> delegate;
-@property (nonatomic, strong) AVAudioPlayer *sharedAudioPlayer;
 @property (nonatomic, weak) NSURL *talkURL;
 @property (nonatomic, weak) ZBMonk *monk;
 

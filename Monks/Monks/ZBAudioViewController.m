@@ -9,6 +9,8 @@
 #import "ZBAudioViewController.h"
 #import <TDAudioPlayer/TDAudioPlayer.h>
 #import "ZBAudioPlayerView.h"
+#import "ZBSharedAudioPlayer.h"
+#import "ZBAppDelegate.h"
 
 @interface ZBAudioViewController () <ZBAudioPlayerViewDelegate>
 
@@ -16,6 +18,8 @@
 @property (nonatomic, weak) IBOutlet ZBAudioPlayerView *audioPlayerView;
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) UIActivityIndicatorView *loadingView;
+@property (weak,nonatomic) ZBAppDelegate *appDelegate;
+
 
 
 - (void)playOrPauseCurrentTrack;
@@ -33,20 +37,13 @@
     return self;
 }
  
-+(AVAudioPlayer *)sharedAudioPlayer {
-    static dispatch_once_t pred;
-    static AVAudioPlayer *shared = nil;
 
-    dispatch_once(&pred, ^{
-        shared = [[AVAudioPlayer alloc] init];
-    });
-    return shared;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.appDelegate = (ZBAppDelegate *)[[UIApplication sharedApplication] delegate];
+
     self.audioPlayerView.artistNameLabel.text = self.monk.name;
     self.audioPlayerView.trackNameLabel.text = self.monk.currentTalk;
     self.audioPlayerView.albumArtwork.image = self.monk.image;
@@ -68,8 +65,10 @@
     [super viewDidAppear:animated];
     
     NSError *error;
-    self.sharedAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
-    [self.sharedAudioPlayer prepareToPlay];
+    //[self.appDelegate.player stop];
+    
+   self.appDelegate.player  = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
+    [self.appDelegate.player prepareToPlay];
     [self playOrPauseCurrentTrack];
     
 
@@ -77,11 +76,11 @@
 
 - (void)playOrPauseCurrentTrack
 {
-    if ([self.sharedAudioPlayer isPlaying]) {
-        [self.sharedAudioPlayer pause];
+    if ([self.appDelegate.player isPlaying]) {
+        [self.appDelegate.player pause];
         [self stopTimer];
     } else {
-        [self.sharedAudioPlayer play];
+        [self.appDelegate.player play];
         [self startTimer];
         [_loadingView removeFromSuperview];
     }
@@ -90,24 +89,24 @@
 }
 - (void)skipAheadFifteenSeconds
 {
-    NSTimeInterval time = [self.sharedAudioPlayer currentTime];
+    NSTimeInterval time = [self.appDelegate.player currentTime];
     time+=SKIP_TIME;
-    if (time > self.sharedAudioPlayer.duration) {
+    if (time > self.appDelegate.player.duration) {
         //nothing to do
     } else {
-        [self.sharedAudioPlayer setCurrentTime:time];
+        [self.appDelegate.player setCurrentTime:time];
     }
     [self didPlayForSecond];
 }
 
 - (void)goBackFifteenSeconds
 {
-    NSTimeInterval time = [self.sharedAudioPlayer currentTime];
+    NSTimeInterval time = [self.appDelegate.player currentTime];
     time-=SKIP_TIME;
     if (time < 0) {
         //nothing to do
     } else {
-        [self.sharedAudioPlayer setCurrentTime:time];
+        [self.appDelegate.player setCurrentTime:time];
     }
     [self didPlayForSecond];
 }
@@ -125,16 +124,16 @@
 
 - (void)didPlayForSecond
 {
-    NSString *currentTime = [NSString stringWithFormat:@"%d:%02d", (int)self.sharedAudioPlayer.currentTime / 60, (int)self.sharedAudioPlayer.currentTime % 60, nil];
-    NSString *remainingTime = [NSString stringWithFormat:@"-%d:%02d", (int)(self.sharedAudioPlayer.duration - self.sharedAudioPlayer.currentTime) / 60, (int)(self.sharedAudioPlayer.duration - self.sharedAudioPlayer.currentTime) % 60, nil];
+    NSString *currentTime = [NSString stringWithFormat:@"%d:%02d", (int)self.appDelegate.player.currentTime / 60, (int)self.appDelegate.player.currentTime % 60, nil];
+    NSString *remainingTime = [NSString stringWithFormat:@"-%d:%02d", (int)(self.appDelegate.player.duration - self.appDelegate.player.currentTime) / 60, (int)(self.appDelegate.player.duration - self.appDelegate.player.currentTime) % 60, nil];
     [self.audioPlayerView updateLabelsForTime:currentTime remainingTime:remainingTime];
     
-    [self.audioPlayerView updateSliderForTime:[self.sharedAudioPlayer currentTime] remainingTime:[self.sharedAudioPlayer duration]];
+    [self.audioPlayerView updateSliderForTime:[self.appDelegate.player currentTime] remainingTime:[self.appDelegate.player duration]];
 }
 
 - (void)slideTheSlider:(NSTimeInterval)sliderValue
 {
-    self.sharedAudioPlayer.currentTime = self.sharedAudioPlayer.duration * sliderValue;
+    self.appDelegate.player.currentTime = self.appDelegate.player.duration * sliderValue;
 }
 
 //- (void)viewWillDisappear:(BOOL)animated
