@@ -47,6 +47,7 @@
 		8AAB4BA718A2F1340069FB36 /* BroadView.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA618A2F1340069FB36 /* BroadView.png */; };
 		8AB45C731880D99D001B65B9 /* ZBTalkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB45C721880D99D001B65B9 /* ZBTalkTableViewController.m */; };
 		8AB45C7618810A0B001B65B9 /* ZBAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB45C7518810A0B001B65B9 /* ZBAudioViewController.m */; };
+		8ABD0A1518A555DB00DC3167 /* SimpleBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABD0A1418A555DB00DC3167 /* SimpleBarChart.m */; };
 		8ACA1A4D18578E440057D92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACA1A4C18578E440057D92E /* Foundation.framework */; };
 		8ACA1A4F18578E440057D92E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACA1A4E18578E440057D92E /* CoreGraphics.framework */; };
 		8ACA1A5118578E440057D92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACA1A5018578E440057D92E /* UIKit.framework */; };
@@ -119,6 +120,8 @@
 		8AB45C721880D99D001B65B9 /* ZBTalkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTalkTableViewController.m; sourceTree = "<group>"; };
 		8AB45C7418810A0B001B65B9 /* ZBAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBAudioViewController.h; sourceTree = "<group>"; };
 		8AB45C7518810A0B001B65B9 /* ZBAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBAudioViewController.m; sourceTree = "<group>"; };
+		8ABD0A1318A555DB00DC3167 /* SimpleBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleBarChart.h; sourceTree = "<group>"; };
+		8ABD0A1418A555DB00DC3167 /* SimpleBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleBarChart.m; sourceTree = "<group>"; };
 		8ACA1A4918578E440057D92E /* Monks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACA1A4C18578E440057D92E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8ACA1A4E18578E440057D92E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -273,6 +276,8 @@
 				8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */,
 				8AAB4BA318A065290069FB36 /* ZBAudioPlayerView.h */,
 				8AAB4BA418A065290069FB36 /* ZBAudioPlayerView.m */,
+				8ABD0A1318A555DB00DC3167 /* SimpleBarChart.h */,
+				8ABD0A1418A555DB00DC3167 /* SimpleBarChart.m */,
 			);
 			path = Monks;
 			sourceTree = "<group>";
@@ -473,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABD0A1518A555DB00DC3167 /* SimpleBarChart.m in Sources */,
 				8ACA1A83185790D90057D92E /* ZBTableViewController.m in Sources */,
 				8ACA1A5D18578E440057D92E /* ZBAppDelegate.m in Sources */,
 				8AB45C7618810A0B001B65B9 /* ZBAudioViewController.m in Sources */,
