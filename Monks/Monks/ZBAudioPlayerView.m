@@ -10,8 +10,6 @@
 
 @interface ZBAudioPlayerView ()
 
-@property (nonatomic, weak) IBOutlet UIButton *playButton;
-
 @end
 
 @implementation ZBAudioPlayerView
@@ -50,11 +48,11 @@
     if (button.tag == 1) {
         [button setImage:[UIImage imageNamed:@"PauseIcon.png"]];
         [button setTag:0];
-        NSLog(@"%d", button.tag);
+        NSLog(@"%ld", (long)button.tag);
     } else {
         [button setImage:[UIImage imageNamed:@"PlayIcon.png"]];
         [button setTag:1];
-        NSLog(@"%d", button.tag);
+        NSLog(@"%ld", (long)button.tag);
     }
     
 }

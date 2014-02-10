@@ -1,4 +1,4 @@
-//
+
 //  ZBAppDelegate.m
 //  Monks
 //
@@ -14,7 +14,48 @@
 {
    self.player = [AVAudioPlayer new];
     
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(interruption:)
+                                                 name:AVAudioSessionInterruptionNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(routeChange:)
+                                                 name:AVAudioSessionRouteChangeNotification
+                                               object:nil];
+    
     return YES;
+}
+
+-(void)interruption:(NSNotification *)notification
+{
+    
+}
+
+-(void)routeChange:(NSNotification *)notification
+{
+    NSLog(@"routeChange:");
+    
+    NSDictionary *dictionary = notification.userInfo;
+    NSInteger routeChangeReason = [[dictionary valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
+    
+    switch (routeChangeReason) {
+//        case AVAudioSessionRouteChangeReasonNewDeviceAvailable:
+//            NSLog(@"Something happened");
+//            if ([self.player isPlaying]) {
+//                NSLog(@"Started playing");
+//            }
+//            [self.player play];
+//            break;
+            
+        case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:
+            NSLog(@"Headphones Unplugged");
+            [self.player pause];
+            
+        default:
+            break;
+    }
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

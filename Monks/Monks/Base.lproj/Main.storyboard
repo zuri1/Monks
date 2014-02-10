@@ -142,7 +142,7 @@
                                         <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <items>
-                                            <barButtonItem systemItem="rewind" id="6Pd-uF-0M6">
+                                            <barButtonItem title="-15sec" id="6Pd-uF-0M6">
                                                 <connections>
                                                     <action selector="goBackFifteenSeconds:" destination="xq4-vv-hK9" id="Hh1-Id-4z1"/>
                                                 </connections>
@@ -154,7 +154,7 @@
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="eba-pc-PIK"/>
-                                            <barButtonItem systemItem="fastForward" id="ZIt-Yj-fEk">
+                                            <barButtonItem title="+15sec" id="ZIt-Yj-fEk">
                                                 <connections>
                                                     <action selector="skipAheadFifteenSeconds:" destination="xq4-vv-hK9" id="Q7s-CZ-eXo"/>
                                                 </connections>
@@ -249,6 +249,7 @@
                     <navigationItem key="navigationItem" id="ljJ-qb-xas"/>
                     <connections>
                         <outlet property="audioPlayerView" destination="xq4-vv-hK9" id="Agb-C9-JUp"/>
+                        <outlet property="playButton" destination="HzL-cD-aVB" id="Q7h-bD-Eg0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3k-7n-Q5X" userLabel="First Responder" sceneMemberID="firstResponder"/>

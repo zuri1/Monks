@@ -8,10 +8,12 @@
 
 #import "ZBTalkTableViewController.h"
 #import "ZBAudioViewController.h"
+#import "ZBAppDelegate.h"
 
 @interface ZBTalkTableViewController ()
 
 @property (nonatomic) NSMutableArray *talkURLs;
+@property (weak, nonatomic) ZBAppDelegate *appDelegate;
 
 @end
 
@@ -72,7 +74,10 @@
     return cell;
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 
 
 #pragma mark - Navigation
@@ -87,6 +92,7 @@
         
         audioVC.monk.currentTalk = self.monk.talks[[self.tableView indexPathForSelectedRow].row];
 
+        
     }
 
 }

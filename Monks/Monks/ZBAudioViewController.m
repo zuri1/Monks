@@ -9,11 +9,11 @@
 #import "ZBAudioViewController.h"
 #import <TDAudioPlayer/TDAudioPlayer.h>
 #import "ZBAudioPlayerView.h"
-#import "ZBSharedAudioPlayer.h"
 #import "ZBAppDelegate.h"
 
-@interface ZBAudioViewController () <ZBAudioPlayerViewDelegate>
+@interface ZBAudioViewController () <ZBAudioPlayerViewDelegate, AVAudioPlayerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *playButton;
 
 @property (nonatomic, weak) IBOutlet ZBAudioPlayerView *audioPlayerView;
 @property (nonatomic, strong) NSTimer *timer;
@@ -36,7 +36,7 @@
     }
     return self;
 }
- 
+
 
 
 - (void)viewDidLoad
@@ -44,12 +44,57 @@
     [super viewDidLoad];
     self.appDelegate = (ZBAppDelegate *)[[UIApplication sharedApplication] delegate];
 
+        
     self.audioPlayerView.artistNameLabel.text = self.monk.name;
     self.audioPlayerView.trackNameLabel.text = self.monk.currentTalk;
     self.audioPlayerView.albumArtwork.image = self.monk.image;
     self.audioPlayerView.backgroundArtwork.image = [UIImage imageNamed:@"BroadView.png"];
     
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(interruption:)
+//                                                 name:AVAudioSessionRouteChangeNotification
+//                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(routeChange:)
+                                                 name:AVAudioSessionRouteChangeNotification
+                                               object:nil];
     }
+
+//-(void)interruption:(NSNotification *)notification
+//{
+//    NSLog(@"interruption:");
+//}
+
+- (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player
+{
+    NSLog(@"audioPlayerBeginInterruption");
+    [self.playButton setImage:[UIImage imageNamed:@"PlayIcon.png"]];
+    [self.playButton setTag:1];
+}
+
+-(void)routeChange:(NSNotification *)notification
+{
+    NSLog(@"routeChange:");
+    
+    NSDictionary *dictionary = notification.userInfo;
+    NSInteger routeChangeReason = [[dictionary valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
+    
+    switch (routeChangeReason) {
+        case AVAudioSessionRouteChangeReasonNewDeviceAvailable:
+            NSLog(@"Something happened");
+            
+            break;
+            
+        case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:
+            NSLog(@"Headphones Unplugged");
+            [self.playButton setImage:[UIImage imageNamed:@"PlayIcon.png"]];
+            [self.playButton setTag:1];
+        default:
+            break;
+    }
+}
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -58,7 +103,11 @@
     self.loadingView = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(150, 250, 44, 44)];
     [self.view addSubview:self.loadingView];
     [self.loadingView startAnimating];
+    
 }
+
+
+
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -68,10 +117,11 @@
     //[self.appDelegate.player stop];
     
    self.appDelegate.player  = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
+    [self.appDelegate.player setDelegate:self];
     [self.appDelegate.player prepareToPlay];
     [self playOrPauseCurrentTrack];
     
-
+    
 }
 
 - (void)playOrPauseCurrentTrack

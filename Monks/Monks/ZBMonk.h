@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSMutableArray *talks;
 @property (nonatomic, strong) NSString *currentTalk;
 
+
 - (id)initWithImage:(UIImage *)aImage
               name:(NSString *)aName
               talks:(NSMutableArray *)aTalks;

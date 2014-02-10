@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ZBMonk.h"
 #import <AVFoundation/AVFoundation.h>
+#import <AVFoundation/AVAudioSession.h>
 
 @protocol ZBAudioViewControllerDelegate <NSObject>
 

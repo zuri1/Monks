@@ -30,6 +30,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *albumArtwork;
 @property (nonatomic, weak) IBOutlet UIImageView *backgroundArtwork;
 
+
 - (IBAction)playOrPause:(id)sender;
 - (IBAction)skipAheadFifteenSeconds:(id)sender;
 - (IBAction)goBackFifteenSeconds:(id)sender;
