@@ -59,7 +59,7 @@
                                              selector:@selector(routeChange:)
                                                  name:AVAudioSessionRouteChangeNotification
                                                object:nil];
-    }
+}
 
 //-(void)interruption:(NSNotification *)notification
 //{
@@ -113,14 +113,21 @@
 {
     [super viewDidAppear:animated];
     
-    NSError *error;
-    //[self.appDelegate.player stop];
     
-   self.appDelegate.player  = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
-    [self.appDelegate.player setDelegate:self];
-    [self.appDelegate.player prepareToPlay];
-    [self playOrPauseCurrentTrack];
-    
+            NSError *error;
+            //[self.appDelegate.player stop];
+    if ([self.appDelegate.currentTrack isEqualToString:self.monk.currentTalk]) {
+        // do nothing
+        [self startTimer];
+        [_loadingView removeFromSuperview];
+        NSLog(@"The selected talk is already playing");
+    } else {
+            self.appDelegate.player  = [[AVAudioPlayer alloc] initWithContentsOfURL:self.talkURL error:&error];
+            [self.appDelegate.player setDelegate:self];
+            [self.appDelegate.player prepareToPlay];
+            [self playOrPauseCurrentTrack];
+         self.appDelegate.currentTrack = self.monk.currentTalk;
+    }
     
 }
 

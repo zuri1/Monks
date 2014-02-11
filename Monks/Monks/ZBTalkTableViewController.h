@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ZBTableViewController.h"
+#import "ZBTalkTableViewCell.h"
 
 @interface ZBTalkTableViewController : UITableViewController
 

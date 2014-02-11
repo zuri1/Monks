@@ -31,12 +31,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.appDelegate = (ZBAppDelegate *)[UIApplication sharedApplication].delegate;
+    
 
     self.title = @"Talks";
     
     self.talkURLs = [[NSMutableArray alloc] init];
-    
-    for (NSString *string in self.monk.talks) {
+      for (NSString *string in self.monk.talks) {
         NSString *mp3Path = [[NSBundle mainBundle] pathForResource:string ofType:@"mp3"];
         NSURL *mp3URL = [NSURL fileURLWithPath:mp3Path];
         
@@ -67,9 +68,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    ZBTalkTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = self.monk.talks[indexPath.row];
+    cell.name.text = self.monk.talks[indexPath.row];
     
     return cell;
 }
@@ -87,13 +88,17 @@
     if ([segue.identifier isEqualToString:@"audioPlayer"]) {
         ZBAudioViewController *audioVC = (ZBAudioViewController *)segue.destinationViewController;
         
+        
+                
         audioVC.talkURL = self.talkURLs[[self.tableView indexPathForSelectedRow].row];
         audioVC.monk = self.monk;
         
         audioVC.monk.currentTalk = self.monk.talks[[self.tableView indexPathForSelectedRow].row];
-
         
-    }
+        NSLog(@"Current talk is: %@", self.monk.currentTalk);
+        
+        }
+    
 
 }
 

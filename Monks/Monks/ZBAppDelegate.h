@@ -13,6 +13,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong,nonatomic) AVAudioPlayer *player;
-
+@property (strong, nonatomic) NSString *currentTrack;
 
 @end
