@@ -7,14 +7,20 @@
 		<dict>
 			<key>talks</key>
 			<array>
-				<string>Forgiveness</string>
-				<string>Forgiveness Q &amp; A</string>
-				<string>Removing the Dart</string>
-				<string>Removing the Dart Q &amp; A</string>
-				<string>Buddhist Psychology</string>
+				<string>Guided Meditation - Bangkok</string>
+				<string>Dhamma Talk</string>
+				<string>Mindfulness and Beyond</string>
 			</array>
 			<key>name</key>
-			<string>Ajahn Amaro</string>
+			<string>Ajahn Jayasaro</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Meditation Opens Possibilities</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Sona</string>
 		</dict>
 		<dict>
 			<key>talks</key>
@@ -28,18 +34,19 @@
 		<dict>
 			<key>talks</key>
 			<array>
-				<string>Meditation Technique</string>
-				<string>Guided Meditation</string>
-				<string>Dhamma Talk</string>
-				<string>Mindfulness and Beyond</string>
+				<string>Forgiveness</string>
+				<string>Forgiveness Q &amp; A</string>
+				<string>Removing the Dart</string>
+				<string>Removing the Dart Q &amp; A</string>
+				<string>Buddhist Psychology</string>
 			</array>
 			<key>name</key>
-			<string>Ajahn Jayasaro</string>
+			<string>Ajahn Amaro</string>
 		</dict>
 		<dict>
 			<key>talks</key>
 			<array>
-				<string>Six Teachers</string>
+				<string>The Art of Meditation</string>
 			</array>
 			<key>name</key>
 			<string>Ajahn Munindo</string>
@@ -51,14 +58,6 @@
 			</array>
 			<key>name</key>
 			<string>Ajahn Pasanno</string>
-		</dict>
-		<dict>
-			<key>talks</key>
-			<array>
-				<string>Meditation Opens Possibilities</string>
-			</array>
-			<key>name</key>
-			<string>Ajahn Sona</string>
 		</dict>
 		<dict>
 			<key>talks</key>

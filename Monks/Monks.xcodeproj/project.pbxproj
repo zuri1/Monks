@@ -12,8 +12,7 @@
 		8A1537A118A45F2C007CBFA9 /* Dukkha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A018A45F2C007CBFA9 /* Dukkha.mp3 */; };
 		8A1537A318A46031007CBFA9 /* Conditions of the Mind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A218A46031007CBFA9 /* Conditions of the Mind.mp3 */; };
 		8A1537A518A4607A007CBFA9 /* Being a Monk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A418A4607A007CBFA9 /* Being a Monk.mp3 */; };
-		8A1537A718A460C2007CBFA9 /* Six Teachers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A618A460C2007CBFA9 /* Six Teachers.mp3 */; };
-		8A1537A918A4611B007CBFA9 /* Guided Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A818A4611B007CBFA9 /* Guided Meditation.mp3 */; };
+		8A1537A918A4611B007CBFA9 /* Guided Meditation - Bangkok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A818A4611B007CBFA9 /* Guided Meditation - Bangkok.mp3 */; };
 		8A1537AB18A46146007CBFA9 /* Letting the World End.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537AA18A46146007CBFA9 /* Letting the World End.mp3 */; };
 		8A1537AD18A46584007CBFA9 /* Meditation Opens Possibilities.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537AC18A46584007CBFA9 /* Meditation Opens Possibilities.mp3 */; };
 		8A1537AF18A46699007CBFA9 /* Compassion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537AE18A46699007CBFA9 /* Compassion.mp3 */; };
@@ -25,7 +24,6 @@
 		8A1537BB18A4680D007CBFA9 /* Dhamma Talk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537BA18A4680D007CBFA9 /* Dhamma Talk.mp3 */; };
 		8A1537BD18A46838007CBFA9 /* Buddhist Psychology.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537BC18A46838007CBFA9 /* Buddhist Psychology.mp3 */; };
 		8A1537BF18A46878007CBFA9 /* Mindfulness and Beyond.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537BE18A46878007CBFA9 /* Mindfulness and Beyond.mp3 */; };
-		8A1537C118A468F2007CBFA9 /* Meditation Technique.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537C018A468F2007CBFA9 /* Meditation Technique.mp3 */; };
 		8A1B9F4918959EB200538CDE /* appIcon.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B9F4818959EB200538CDE /* appIcon.JPG */; };
 		8A8E6283187354E200746CC3 /* Ajahn Amaro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E627A187354E200746CC3 /* Ajahn Amaro.jpg */; };
 		8A8E6284187354E200746CC3 /* Ajahn Chah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E627B187354E200746CC3 /* Ajahn Chah.jpg */; };
@@ -40,6 +38,9 @@
 		8A8E62921873588700746CC3 /* Forgiveness Q & A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628E1873588700746CC3 /* Forgiveness Q & A.mp3 */; };
 		8A8E62931873588700746CC3 /* Removing the Dart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E628F1873588700746CC3 /* Removing the Dart.mp3 */; };
 		8A8E62941873588700746CC3 /* Removing the Dart Q & A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8E62901873588700746CC3 /* Removing the Dart Q & A.mp3 */; };
+		8A99F3AB18A9B2D40075356F /* The Art of Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A99F3AA18A9B2D40075356F /* The Art of Meditation.mp3 */; };
+		8A99F3AE18A9D0D30075356F /* ZBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99F3AD18A9D0D30075356F /* ZBWebViewController.m */; };
+		8A99F3B118A9D0F50075356F /* ZBAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99F3B018A9D0F50075356F /* ZBAboutViewController.m */; };
 		8AAB4BA0189DB1110069FB36 /* ZBMonk.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB4B9F189DB1110069FB36 /* ZBMonk.m */; };
 		8AAB4BA218A026AB0069FB36 /* ZBMonks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */; };
 		8AAB4BA518A065290069FB36 /* ZBAudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB4BA418A065290069FB36 /* ZBAudioPlayerView.m */; };
@@ -80,8 +81,7 @@
 		8A1537A018A45F2C007CBFA9 /* Dukkha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dukkha.mp3; sourceTree = "<group>"; };
 		8A1537A218A46031007CBFA9 /* Conditions of the Mind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Conditions of the Mind.mp3"; sourceTree = "<group>"; };
 		8A1537A418A4607A007CBFA9 /* Being a Monk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Being a Monk.mp3"; sourceTree = "<group>"; };
-		8A1537A618A460C2007CBFA9 /* Six Teachers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Six Teachers.mp3"; sourceTree = "<group>"; };
-		8A1537A818A4611B007CBFA9 /* Guided Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Guided Meditation.mp3"; sourceTree = "<group>"; };
+		8A1537A818A4611B007CBFA9 /* Guided Meditation - Bangkok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Guided Meditation - Bangkok.mp3"; sourceTree = "<group>"; };
 		8A1537AA18A46146007CBFA9 /* Letting the World End.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Letting the World End.mp3"; sourceTree = "<group>"; };
 		8A1537AC18A46584007CBFA9 /* Meditation Opens Possibilities.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Meditation Opens Possibilities.mp3"; sourceTree = "<group>"; };
 		8A1537AE18A46699007CBFA9 /* Compassion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Compassion.mp3; sourceTree = "<group>"; };
@@ -93,7 +93,6 @@
 		8A1537BA18A4680D007CBFA9 /* Dhamma Talk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dhamma Talk.mp3"; sourceTree = "<group>"; };
 		8A1537BC18A46838007CBFA9 /* Buddhist Psychology.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Buddhist Psychology.mp3"; sourceTree = "<group>"; };
 		8A1537BE18A46878007CBFA9 /* Mindfulness and Beyond.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mindfulness and Beyond.mp3"; sourceTree = "<group>"; };
-		8A1537C018A468F2007CBFA9 /* Meditation Technique.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Meditation Technique.mp3"; sourceTree = "<group>"; };
 		8A1B9F4818959EB200538CDE /* appIcon.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appIcon.JPG; sourceTree = "<group>"; };
 		8A8E627A187354E200746CC3 /* Ajahn Amaro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ajahn Amaro.jpg"; sourceTree = "<group>"; };
 		8A8E627B187354E200746CC3 /* Ajahn Chah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ajahn Chah.jpg"; sourceTree = "<group>"; };
@@ -108,6 +107,11 @@
 		8A8E628E1873588700746CC3 /* Forgiveness Q & A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Forgiveness Q & A.mp3"; sourceTree = "<group>"; };
 		8A8E628F1873588700746CC3 /* Removing the Dart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Removing the Dart.mp3"; sourceTree = "<group>"; };
 		8A8E62901873588700746CC3 /* Removing the Dart Q & A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Removing the Dart Q & A.mp3"; sourceTree = "<group>"; };
+		8A99F3AA18A9B2D40075356F /* The Art of Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Art of Meditation.mp3"; sourceTree = "<group>"; };
+		8A99F3AC18A9D0D30075356F /* ZBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWebViewController.h; sourceTree = "<group>"; };
+		8A99F3AD18A9D0D30075356F /* ZBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWebViewController.m; sourceTree = "<group>"; };
+		8A99F3AF18A9D0F50075356F /* ZBAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBAboutViewController.h; sourceTree = "<group>"; };
+		8A99F3B018A9D0F50075356F /* ZBAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBAboutViewController.m; sourceTree = "<group>"; };
 		8AAB4B9E189DB1110069FB36 /* ZBMonk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBMonk.h; sourceTree = "<group>"; };
 		8AAB4B9F189DB1110069FB36 /* ZBMonk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBMonk.m; sourceTree = "<group>"; };
 		8AAB4BA118A026AB0069FB36 /* ZBMonks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZBMonks.plist; sourceTree = "<group>"; };
@@ -197,11 +201,10 @@
 				8A1537AA18A46146007CBFA9 /* Letting the World End.mp3 */,
 				8A1537B418A46749007CBFA9 /* Holiday For The Heart 1.mp3 */,
 				8A1537B518A46749007CBFA9 /* Holiday For The Heart 2.mp3 */,
-				8A1537A818A4611B007CBFA9 /* Guided Meditation.mp3 */,
+				8A1537A818A4611B007CBFA9 /* Guided Meditation - Bangkok.mp3 */,
 				8A1537BA18A4680D007CBFA9 /* Dhamma Talk.mp3 */,
 				8A1537BE18A46878007CBFA9 /* Mindfulness and Beyond.mp3 */,
-				8A1537C018A468F2007CBFA9 /* Meditation Technique.mp3 */,
-				8A1537A618A460C2007CBFA9 /* Six Teachers.mp3 */,
+				8A99F3AA18A9B2D40075356F /* The Art of Meditation.mp3 */,
 				8A1537A418A4607A007CBFA9 /* Being a Monk.mp3 */,
 				8A1537A218A46031007CBFA9 /* Conditions of the Mind.mp3 */,
 				8A1537B818A467BC007CBFA9 /* Buddhist Practice.mp3 */,
@@ -267,6 +270,10 @@
 				8AB45C721880D99D001B65B9 /* ZBTalkTableViewController.m */,
 				8AB45C7418810A0B001B65B9 /* ZBAudioViewController.h */,
 				8AB45C7518810A0B001B65B9 /* ZBAudioViewController.m */,
+				8A99F3AF18A9D0F50075356F /* ZBAboutViewController.h */,
+				8A99F3B018A9D0F50075356F /* ZBAboutViewController.m */,
+				8A99F3AC18A9D0D30075356F /* ZBWebViewController.h */,
+				8A99F3AD18A9D0D30075356F /* ZBWebViewController.m */,
 				8AAB4B9E189DB1110069FB36 /* ZBMonk.h */,
 				8AAB4B9F189DB1110069FB36 /* ZBMonk.m */,
 				8ACA1A6418578E440057D92E /* Images.xcassets */,
@@ -401,9 +408,7 @@
 				8A8E6285187354E200746CC3 /* Ajahn Jayasaro.jpg in Resources */,
 				8A1537BD18A46838007CBFA9 /* Buddhist Psychology.mp3 in Resources */,
 				8A8E6287187354E200746CC3 /* Ajahn Pasanno.jpg in Resources */,
-				8A1537C118A468F2007CBFA9 /* Meditation Technique.mp3 in Resources */,
 				8A8E6288187354E200746CC3 /* Ajahn Sona.jpg in Resources */,
-				8A1537A718A460C2007CBFA9 /* Six Teachers.mp3 in Resources */,
 				8A8E62921873588700746CC3 /* Forgiveness Q & A.mp3 in Resources */,
 				8ACA1A6518578E440057D92E /* Images.xcassets in Resources */,
 				8A1537AB18A46146007CBFA9 /* Letting the World End.mp3 in Resources */,
@@ -424,10 +429,11 @@
 				8A1537A518A4607A007CBFA9 /* Being a Monk.mp3 in Resources */,
 				8A1537BF18A46878007CBFA9 /* Mindfulness and Beyond.mp3 in Resources */,
 				8A1537A318A46031007CBFA9 /* Conditions of the Mind.mp3 in Resources */,
-				8A1537A918A4611B007CBFA9 /* Guided Meditation.mp3 in Resources */,
+				8A1537A918A4611B007CBFA9 /* Guided Meditation - Bangkok.mp3 in Resources */,
 				8A1537B318A46701007CBFA9 /* Lovingkindness Meditation.mp3 in Resources */,
 				8A1537B918A467BC007CBFA9 /* Buddhist Practice.mp3 in Resources */,
 				8A8E6289187354E200746CC3 /* Ajahn Sumedho.jpg in Resources */,
+				8A99F3AB18A9B2D40075356F /* The Art of Meditation.mp3 in Resources */,
 				8A8E62911873588700746CC3 /* Forgiveness.mp3 in Resources */,
 				8A8E628B187354E200746CC3 /* Ayya Khema.jpg in Resources */,
 				8AAB4BA718A2F1340069FB36 /* BroadView.png in Resources */,
@@ -486,8 +492,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ABD0A1518A555DB00DC3167 /* SimpleBarChart.m in Sources */,
+				8A99F3AE18A9D0D30075356F /* ZBWebViewController.m in Sources */,
 				8ACA1A83185790D90057D92E /* ZBTableViewController.m in Sources */,
 				8ACA1A5D18578E440057D92E /* ZBAppDelegate.m in Sources */,
+				8A99F3B118A9D0F50075356F /* ZBAboutViewController.m in Sources */,
 				8AB45C7618810A0B001B65B9 /* ZBAudioViewController.m in Sources */,
 				8AB45C731880D99D001B65B9 /* ZBTalkTableViewController.m in Sources */,
 				8AAB4BA518A065290069FB36 /* ZBAudioPlayerView.m in Sources */,

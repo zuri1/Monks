@@ -88,8 +88,10 @@
         ZBTalkTableViewController *talksVC = (ZBTalkTableViewController *)segue.destinationViewController;
         
         talksVC.monk = self.monks[[self.tableView indexPathForSelectedRow].row];
+    } else if ([segue.identifier isEqualToString:@"about"]) {
+        UIViewController *aboutVC = (UIViewController *)segue.destinationViewController;
+        aboutVC.title = @"About";
     }
-    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
