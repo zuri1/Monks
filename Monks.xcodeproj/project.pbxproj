@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A9AFD47336095C8D5C7C182 /* libPods-MonksTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F056A432341BD67AD5AAF6EE /* libPods-MonksTests.a */; };
+		407DD6A50E3727B2376F117B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BDB03746564F28A371FC11 /* libPods.a */; };
 		8A15379F18A45D4B007CBFA9 /* Mindfulness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A15379E18A45D4B007CBFA9 /* Mindfulness.mp3 */; };
 		8A1537A118A45F2C007CBFA9 /* Dukkha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A018A45F2C007CBFA9 /* Dukkha.mp3 */; };
 		8A1537A318A46031007CBFA9 /* Conditions of the Mind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1537A218A46031007CBFA9 /* Conditions of the Mind.mp3 */; };
@@ -65,6 +67,7 @@
 		8ACA1A7818578E440057D92E /* MonksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACA1A7718578E440057D92E /* MonksTests.m */; };
 		8ACA1A83185790D90057D92E /* ZBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACA1A82185790D90057D92E /* ZBTableViewController.m */; };
 		8ACA1A861857935B0057D92E /* ZBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACA1A851857935B0057D92E /* ZBTableViewCell.m */; };
+		8AF52E211A39254A00CA3D2C /* ZBSampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF52E201A39254A00CA3D2C /* ZBSampleSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0795A20EF18102110A7B28CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4680EF1AD041A328AE19E149 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8A15379E18A45D4B007CBFA9 /* Mindfulness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mindfulness.mp3; sourceTree = "<group>"; };
 		8A1537A018A45F2C007CBFA9 /* Dukkha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dukkha.mp3; sourceTree = "<group>"; };
 		8A1537A218A46031007CBFA9 /* Conditions of the Mind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Conditions of the Mind.mp3"; sourceTree = "<group>"; };
@@ -152,7 +157,11 @@
 		8ACA1A82185790D90057D92E /* ZBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTableViewController.m; sourceTree = "<group>"; };
 		8ACA1A841857935B0057D92E /* ZBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTableViewCell.h; sourceTree = "<group>"; };
 		8ACA1A851857935B0057D92E /* ZBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTableViewCell.m; sourceTree = "<group>"; };
+		8AF52E201A39254A00CA3D2C /* ZBSampleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBSampleSpec.m; sourceTree = "<group>"; };
 		E0BDB03746564F28A371FC11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F056A432341BD67AD5AAF6EE /* libPods-MonksTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MonksTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD8D853737F62CC8C7873D11 /* Pods-MonksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonksTests/Pods-MonksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE59221189AB4F57842C3090 /* Pods-MonksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonksTests/Pods-MonksTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +172,7 @@
 				8ACA1A4F18578E440057D92E /* CoreGraphics.framework in Frameworks */,
 				8ACA1A5118578E440057D92E /* UIKit.framework in Frameworks */,
 				8ACA1A4D18578E440057D92E /* Foundation.framework in Frameworks */,
+				407DD6A50E3727B2376F117B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,12 +183,24 @@
 				8ACA1A6C18578E440057D92E /* XCTest.framework in Frameworks */,
 				8ACA1A6E18578E440057D92E /* UIKit.framework in Frameworks */,
 				8ACA1A6D18578E440057D92E /* Foundation.framework in Frameworks */,
+				2A9AFD47336095C8D5C7C182 /* libPods-MonksTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011393B700AE837904BF0EFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0795A20EF18102110A7B28CA /* Pods.debug.xcconfig */,
+				4680EF1AD041A328AE19E149 /* Pods.release.xcconfig */,
+				FD8D853737F62CC8C7873D11 /* Pods-MonksTests.debug.xcconfig */,
+				FE59221189AB4F57842C3090 /* Pods-MonksTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8A8E6279187354E200746CC3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +254,7 @@
 				8ACA1A7118578E440057D92E /* MonksTests */,
 				8ACA1A4B18578E440057D92E /* Frameworks */,
 				8ACA1A4A18578E440057D92E /* Products */,
+				011393B700AE837904BF0EFE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +275,7 @@
 				8ACA1A5018578E440057D92E /* UIKit.framework */,
 				8ACA1A6B18578E440057D92E /* XCTest.framework */,
 				E0BDB03746564F28A371FC11 /* libPods.a */,
+				F056A432341BD67AD5AAF6EE /* libPods-MonksTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -310,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				8ACA1A7718578E440057D92E /* MonksTests.m */,
+				8AF52E201A39254A00CA3D2C /* ZBSampleSpec.m */,
 				8ACA1A7218578E440057D92E /* Supporting Files */,
 			);
 			path = MonksTests;
@@ -331,9 +356,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ACA1A7B18578E440057D92E /* Build configuration list for PBXNativeTarget "Monks" */;
 			buildPhases = (
+				7A490DB8E33ABD93C56BE77B /* Check Pods Manifest.lock */,
 				8ACA1A4518578E440057D92E /* Sources */,
 				8ACA1A4618578E440057D92E /* Frameworks */,
 				8ACA1A4718578E440057D92E /* Resources */,
+				EFBDF014470A723792FA40A2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,9 +375,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ACA1A7E18578E440057D92E /* Build configuration list for PBXNativeTarget "MonksTests" */;
 			buildPhases = (
+				B8FDA7680BC1B20E7D4207BF /* Check Pods Manifest.lock */,
 				8ACA1A6618578E440057D92E /* Sources */,
 				8ACA1A6718578E440057D92E /* Frameworks */,
 				8ACA1A6818578E440057D92E /* Resources */,
+				33376F41DC335130D677AC36 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -457,6 +486,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33376F41DC335130D677AC36 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonksTests/Pods-MonksTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A490DB8E33ABD93C56BE77B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FDA7680BC1B20E7D4207BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFBDF014470A723792FA40A2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8ACA1A4518578E440057D92E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -483,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF52E211A39254A00CA3D2C /* ZBSampleSpec.m in Sources */,
 				8ACA1A7818578E440057D92E /* MonksTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +690,7 @@
 		};
 		8ACA1A7C18578E440057D92E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0795A20EF18102110A7B28CA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -610,6 +704,7 @@
 		};
 		8ACA1A7D18578E440057D92E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4680EF1AD041A328AE19E149 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -623,6 +718,7 @@
 		};
 		8ACA1A7F18578E440057D92E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD8D853737F62CC8C7873D11 /* Pods-MonksTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Monks.app/Monks";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -645,6 +741,7 @@
 		};
 		8ACA1A8018578E440057D92E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE59221189AB4F57842C3090 /* Pods-MonksTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Monks.app/Monks";
 				FRAMEWORK_SEARCH_PATHS = (

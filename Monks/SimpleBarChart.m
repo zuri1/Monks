@@ -151,7 +151,7 @@ dataSource	= _dataSource;
 
 		// Begin Drawing
 		// Set Frames		
-		CGSize yLabelSize		= self.hasYLabels ? [[NSString stringWithFormat:@"%i", _topValue] sizeWithFont:self.yLabelFont] : CGSizeZero;
+		CGSize yLabelSize		= self.hasYLabels ? [[NSString stringWithFormat:@"%li", (long)_topValue] sizeWithFont:self.yLabelFont] : CGSizeZero;
 		_yLabelView.frame		= CGRectMake(0.0,
 											 0.0,
 											 self.hasYLabels ? yLabelSize.width + 5.0 : 0.0,
@@ -162,7 +162,7 @@ dataSource	= _dataSource;
 											 self.bounds.size.width - (_yLabelView.frame.origin.x + _yLabelView.frame.size.width),
 											 _xLabelMaxHeight);
 		
-		_gridLayer.frame		= CGRectMake(_yLabelView.frame.origin.x + _yLabelView.frame.size.width,
+		_gridLabel.frame		= CGRectMake(_yLabelView.frame.origin.x + _yLabelView.frame.size.width,
 											 0.0,
 											 self.bounds.size.width - (_yLabelView.frame.origin.x + _yLabelView.frame.size.width),
 											 self.bounds.size.height - (_xLabelMaxHeight > 0.0 ? (_xLabelMaxHeight + 5.0) : 0.0));

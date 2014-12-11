@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^ZBConnectionCompletion)(NSInteger statusCode, id responseObject);
+extern BOOL ZBConnectionRequestIsSuccessful(NSUInteger statusCode);
+
 @interface ZBNetworkController : NSObject
+
++ (ZBNetworkController *)sharedController;
 
 @end
