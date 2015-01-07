@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Monks</key>
+	<array>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Guided Meditation - Bangkok</string>
+				<string>Dhamma Talk</string>
+				<string>Mindfulness and Beyond</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Jayasaro</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Meditation Opens Possibilities</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Sona</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Conditions of the Mind</string>
+				<string>Buddhist Practice</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Chah</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Forgiveness</string>
+				<string>Forgiveness Q &amp; A</string>
+				<string>Removing the Dart</string>
+				<string>Removing the Dart Q &amp; A</string>
+				<string>Buddhist Psychology</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Amaro</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>The Art of Meditation</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Munindo</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Mindfulness</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Pasanno</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Letting the World End</string>
+				<string>Holiday For The Heart 1</string>
+				<string>Holiday For The Heart 2</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Sumedho</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Being a Monk</string>
+			</array>
+			<key>name</key>
+			<string>Ajahn Viradhammo</string>
+		</dict>
+		<dict>
+			<key>talks</key>
+			<array>
+				<string>Introduction to Mindfulness</string>
+				<string>Lovingkindness Meditation</string>
+				<string>Compassion</string>
+				<string>Dukkha</string>
+			</array>
+			<key>name</key>
+			<string>Ayya Khema</string>
+		</dict>
+	</array>
+</dict>
+</plist>
