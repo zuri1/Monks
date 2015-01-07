@@ -7,12 +7,24 @@
 //
 
 #import "ZBAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation ZBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-   self.player = [AVAudioPlayer new];
+    // [Optional] Power your app with Local Datastore. For more info, go to
+    // https://parse.com/docs/ios_guide#localdatastore/iOS
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"grcTk9VEGZQencONAP4A6TV5qrf4ad4QuyjpqIPI"
+                  clientKey:@"FLgBDOelNbqirRgAqSi1ycLRbv5uqnh7d4YvzUQd"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    self.player = [AVAudioPlayer new];
     
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     

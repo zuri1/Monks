@@ -12,7 +12,7 @@ SPEC_BEGIN(MathSpec)
 
 describe(@"Math", ^{
     it(@"is pretty cool", ^{
-        NSUInteger a = 16;
+        NSUInteger a = 17;
         NSUInteger b = 26;
         [[theValue(a + b) should] equal:theValue(43)];
     });
