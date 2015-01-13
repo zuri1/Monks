@@ -9,6 +9,7 @@
 #import "ZBTalkTableViewController.h"
 #import "ZBAudioViewController.h"
 #import "ZBAppDelegate.h"
+#import "ZBMoreTalksTableVC.h"
 
 @interface ZBTalkTableViewController ()
 
@@ -99,6 +100,9 @@
         
         }
     
+    if ([segue.identifier isEqualToString:@"moreTalks"]) {
+       
+    }
 
 }
 

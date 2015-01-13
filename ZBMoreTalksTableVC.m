@@ -8,12 +8,16 @@
 
 #import "ZBMoreTalksTableVC.h"
 #import <AWSiOSSDKv2/S3.h>
+#import <Parse/Parse.h>
 
 @interface ZBMoreTalksTableVC ()
+
+@property (strong, nonatomic) NSArray *myArray;
 
 @end
 
 @implementation ZBMoreTalksTableVC
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,8 +30,18 @@
     
     self.title = @"More Talks";
     self.navigationItem.rightBarButtonItem.title = @"Add";
+    
+    self.myArray = [NSArray arrayWithArray:[self getTalksFromParse]];
+    
+    NSLog(@"%lui", (unsigned long)self.myArray.count);
 }
 
+- (NSArray *)getTalksFromParse {
+    PFQuery *query = [PFQuery queryWithClassName:@"Recordings"];
+    NSArray *myArray = [NSArray arrayWithArray:[query findObjects]];
+    
+    return myArray;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -45,7 +59,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 1;
+    return self.myArray.count;
 }
 
 
@@ -55,6 +69,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     
+    cell.textLabel.text = [[self.myArray objectAtIndex:indexPath.row] valueForKey:@"title"];
+
     
     return cell;
 }

@@ -8,6 +8,7 @@
 
 #import "ZBTableViewController.h"
 #import "ZBTalkTableViewController.h"
+#import <Parse/Parse.h>
 
 @interface ZBTableViewController ()
 

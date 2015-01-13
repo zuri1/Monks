@@ -81,6 +81,7 @@
 		8AD58C231A5CC15B00F629A4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD58C221A5CC15B00F629A4 /* Accounts.framework */; };
 		8AD58C251A5CC16A00F629A4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD58C241A5CC16A00F629A4 /* AdSupport.framework */; };
 		8AD58C271A5CC18100F629A4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD58C261A5CC18100F629A4 /* Social.framework */; };
+		8AD58C321A6440C400F629A4 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD58C311A6440C400F629A4 /* ParseUI.framework */; };
 		8AF52E211A39254A00CA3D2C /* ZBSampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF52E201A39254A00CA3D2C /* ZBSampleSpec.m */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +188,7 @@
 		8AD58C221A5CC15B00F629A4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		8AD58C241A5CC16A00F629A4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		8AD58C261A5CC18100F629A4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8AD58C311A6440C400F629A4 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../Downloads/parse-library-1.6.1/ParseUI.framework"; sourceTree = "<group>"; };
 		8AF52E201A39254A00CA3D2C /* ZBSampleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBSampleSpec.m; sourceTree = "<group>"; };
 		E0BDB03746564F28A371FC11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F056A432341BD67AD5AAF6EE /* libPods-MonksTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MonksTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD58C321A6440C400F629A4 /* ParseUI.framework in Frameworks */,
 				8AD58C161A5CBB1700F629A4 /* AudioToolbox.framework in Frameworks */,
 				8AD58C231A5CC15B00F629A4 /* Accounts.framework in Frameworks */,
 				8AD58C251A5CC16A00F629A4 /* AdSupport.framework in Frameworks */,
@@ -314,6 +317,7 @@
 		8ACA1A4B18578E440057D92E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AD58C311A6440C400F629A4 /* ParseUI.framework */,
 				8AD58C261A5CC18100F629A4 /* Social.framework */,
 				8AD58C241A5CC16A00F629A4 /* AdSupport.framework */,
 				8AD58C221A5CC15B00F629A4 /* Accounts.framework */,
@@ -758,6 +762,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.6.1",
 					"$(PROJECT_DIR)",
+					"/Users/zuribiringer/Downloads/parse-library-1.6.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Monks/Monks-Prefix.pch";
@@ -777,6 +782,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.6.1",
 					"$(PROJECT_DIR)",
+					"/Users/zuribiringer/Downloads/parse-library-1.6.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Monks/Monks-Prefix.pch";
